@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="videoview_height">240dp</dimen>
+    <dimen name="videoview_home_row_height">170dp</dimen>
+</resources>
