@@ -3,14 +3,12 @@ package com.tvpage.lib.view;
 import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.ContentObserver;
 import android.graphics.Color;
 import android.graphics.Matrix;
-import android.graphics.PorterDuff;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
@@ -23,71 +21,40 @@ import android.provider.Settings;
 import android.support.annotation.IntRange;
 import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.SparseArray;
-import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.RotateAnimation;
-import android.widget.AdapterView;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/*import com.devbrackets.android.exomedia.core.EMListenerMux;
-import com.devbrackets.android.exomedia.core.exoplayer.EMExoPlayer;
-import com.devbrackets.android.exomedia.core.listener.Id3MetadataListener;
-import com.devbrackets.android.exomedia.core.listener.InfoListener;
-import com.devbrackets.android.exomedia.listener.OnBufferUpdateListener;
-import com.devbrackets.android.exomedia.listener.OnCompletionListener;
-import com.devbrackets.android.exomedia.listener.OnErrorListener;
-import com.devbrackets.android.exomedia.listener.OnPreparedListener;
-import com.devbrackets.android.exomedia.ui.widget.EMVideoView;
-
-import com.google.android.exoplayer.metadata.id3.Id3Frame;*/
 import com.devbrackets.android.exomedia.listener.OnBufferUpdateListener;
 import com.devbrackets.android.exomedia.listener.OnCompletionListener;
 import com.devbrackets.android.exomedia.listener.OnErrorListener;
 import com.devbrackets.android.exomedia.listener.OnPreparedListener;
 import com.devbrackets.android.exomedia.ui.widget.VideoView;
-import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.source.MediaPeriod;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.upstream.Allocator;
 import com.tvpage.lib.FullScreenVideoPlayerActivity;
 import com.tvpage.lib.R;
 import com.tvpage.lib.api_listeners.OnTvPageResponseApiListener;
+import com.tvpage.lib.model.TvPageResponseModel;
+import com.tvpage.lib.utils.SpinnerAdapterQuality;
 import com.tvpage.lib.utils.TvPageException;
 import com.tvpage.lib.utils.TvPageInstance;
 import com.tvpage.lib.utils.TvPageInterfaces;
-
-
-import com.tvpage.lib.model.TvPageResponseModel;
-import com.tvpage.lib.utils.SpinnerAdapterQuality;
 import com.tvpage.lib.utils.TvPageUtils;
-import com.tvpage.lib.utils.VodView;
-
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -98,7 +65,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -126,6 +92,18 @@ import static com.tvpage.lib.utils.TvPageUtils.VIMEO_VIDEO_TYPE;
 import static com.tvpage.lib.utils.TvPageUtils.YOUTUBE_VIDEO_TYPE;
 import static com.tvpage.lib.utils.TvPageUtils.getOkHttpClient;
 
+/*import com.devbrackets.android.exomedia.core.EMListenerMux;
+import com.devbrackets.android.exomedia.core.exoplayer.EMExoPlayer;
+import com.devbrackets.android.exomedia.core.listener.Id3MetadataListener;
+import com.devbrackets.android.exomedia.core.listener.InfoListener;
+import com.devbrackets.android.exomedia.listener.OnBufferUpdateListener;
+import com.devbrackets.android.exomedia.listener.OnCompletionListener;
+import com.devbrackets.android.exomedia.listener.OnErrorListener;
+import com.devbrackets.android.exomedia.listener.OnPreparedListener;
+import com.devbrackets.android.exomedia.ui.widget.EMVideoView;
+
+import com.google.android.exoplayer.metadata.id3.Id3Frame;*/
+
 /**
  * Created by MTPC-110 on 3/9/2017.
  */
@@ -136,6 +114,8 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
     //controls
     private boolean isCallAnalyticsApi = true;
 
+    //fullscreen flag
+    private boolean isFullScreenEnable = true;
 
     //analytics
     private String videoIdForAnalytics = "";
@@ -385,6 +365,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
      * The On error.
      */
     TvPageInterfaces.OnError onError;
+
 
 
     /**
@@ -772,7 +753,6 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
     /*used to initialise views*/
     private void init() {
 
-
         View view = inflate(mContext, R.layout.tvpage_player, null);
         videoView = (VideoView) view.findViewById(R.id.videoView);
         controllerAnchor = (FrameLayout) view.findViewById(R.id.controllerAnchor);
@@ -825,8 +805,8 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
 
         utils = new TvPageUtils();
 
-        seekBarVolume.setPadding(15, 0, 15, 0);
-        seekbarVideo.setPadding(15, 0, 15, 0);
+        seekBarVolume.setPadding(20, 0, 20, 0);
+        seekbarVideo.setPadding(20, 0, 20, 0);
 
         //set seekbar color
 
@@ -867,6 +847,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         //videoView.setOnInfoListener(this);
         videoView.setOnCompletionListener(this);
         videoView.setOnErrorListener(this);
+
         videoView.setOnBufferUpdateListener(new OnBufferUpdateListener() {
             @Override
             public void onBufferingUpdate(@IntRange(from = 0L, to = 100L) int percent) {
@@ -925,19 +906,30 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         mContext.getContentResolver().registerContentObserver(
                 Settings.System.CONTENT_URI, true,
                 mSettingsContentObserver);
-
-
     }
 
     @Override
     public boolean onError(Exception e) {
-        e.printStackTrace();
+        if (e != null) {
+            e.printStackTrace();
+            if (e.getCause().getMessage().contains("403")) {
+                // Log.e("OnError", urlToPlayDesiredQuality);
+
+               /* if (recyclerQuality != null) {
+                    if (recyclerQuality.findViewHolderForAdapterPosition(2) != null) {
+                        recyclerQuality.findViewHolderForAdapterPosition(2).itemView.performClick();
+                    } else if (recyclerQuality.findViewHolderForAdapterPosition(3) != null) {
+                        recyclerQuality.findViewHolderForAdapterPosition(3).itemView.performClick();
+                    }
+                }*/
+            }
+        }
+
         if (onError != null) {
             onError.OnError();
         }
 
         return true;
-
     }
 
 
@@ -1180,7 +1172,6 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         }
     }
 
-
     private HashMap<String, String> getDefaultEntryInAuto(ArrayList<HashMap<String, String>> hashMapArrayList) {
         HashMap<String, String> hashMapAuto = new HashMap<String, String>();
         try {
@@ -1387,7 +1378,6 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
                         } else {
                             urlToPlayDesiredQuality = "http:" + mData.get(position).get(key);
                         }
-
 
                     }
 
@@ -2468,6 +2458,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
      * Play.
      */
     public void play() {
+
         if (videoView != null) {
 
             //call first 3 second handler here
@@ -3170,12 +3161,17 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
                 }
                 break;
             case "imgQuality":
+
                 if (isQualityVisible) {
                     isQualityVisible = false;
                     //close/invisible recyclerview
                     recyclerQuality.setVisibility(INVISIBLE);
 
                 } else {
+                      /*Vishal changes 31-08-2017*/
+                   /* if (videoView != null && seekbarVideo.getProgress() < 6) {
+                        return;
+                    }*/
                     isQualityVisible = true;
                     //Visible recyclerview
                     recyclerQuality.setVisibility(VISIBLE);
@@ -3519,6 +3515,21 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         }
     }
 
+
+    public void setFullscreenEnable(boolean isFullScreenEnable) {
+        this.isFullScreenEnable = isFullScreenEnable;
+        if (imgFullScreen == null) return;
+        if (this.isFullScreenEnable) {
+            imgFullScreen.setVisibility(View.VISIBLE);
+        } else {
+            imgFullScreen.setVisibility(View.GONE);
+        }
+    }
+
+    public boolean isFullScreenEnabled() {
+        return this.isFullScreenEnable;
+    }
+
     private void setVideos() {
         try {
 
@@ -3634,8 +3645,6 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
      */
     void setVideosOnQualityChanged() {
         try {
-
-
             //set the media controller in the VideoView
             // videoView.setMediaController(null);
             //set the uri of the video to be played
@@ -3666,13 +3675,9 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
             play();
         }
 
-
-
         /*videoViews.requestFocus();
         //we also set an setOnPreparedListener in order to know when the video file is ready for playback
         videoViews.setOnPreparedListener(this);*/
-
-
     }
 
     /**

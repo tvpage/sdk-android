@@ -25,6 +25,7 @@ public class TvPageBuilder {
     TvPageInterfaces.OnStateChanged onStateChanged;
     TvPageInterfaces.OnError onError;
 
+
     TvPagePlayer tvPagePlayer;
 
 
@@ -41,6 +42,7 @@ public class TvPageBuilder {
         this.onError = onError;
         return this;
     }
+
 
     public TvPageInterfaces.OnReady getOnReady() {
         return onReady;
@@ -243,6 +245,8 @@ public class TvPageBuilder {
         if (this.onError != null) {
             tvPagePlayer.setOnError(this.onError);
         }
+
+
 
         return this;
     }
