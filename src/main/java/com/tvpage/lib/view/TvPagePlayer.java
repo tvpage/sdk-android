@@ -367,7 +367,6 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
     TvPageInterfaces.OnError onError;
 
 
-
     /**
      * Gets on error.
      *
@@ -915,20 +914,24 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
             if (e.getCause().getMessage().contains("403")) {
                 // Log.e("OnError", urlToPlayDesiredQuality);
 
-               /* if (recyclerQuality != null) {
+                /*for 144px error*/
+                videoView.setOnPreparedListener(null);
+                videoView.setOnPreparedListener(this);
+
+                // videoView.release();
+                if (recyclerQuality != null) {
                     if (recyclerQuality.findViewHolderForAdapterPosition(2) != null) {
                         recyclerQuality.findViewHolderForAdapterPosition(2).itemView.performClick();
                     } else if (recyclerQuality.findViewHolderForAdapterPosition(3) != null) {
                         recyclerQuality.findViewHolderForAdapterPosition(3).itemView.performClick();
                     }
-                }*/
+                }
+                onRestoreInstance();
             }
         }
-
         if (onError != null) {
             onError.OnError();
         }
-
         return true;
     }
 
