@@ -23,11 +23,11 @@
         android:id="@+id/relativesParent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:tag="relativesParent">
+        android:tag="relativesParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <ImageView
             android:id="@+id/imgPoster"

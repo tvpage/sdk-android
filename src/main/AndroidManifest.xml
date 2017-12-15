@@ -8,6 +8,7 @@
 
 
     <application
+        android:name="com.tvpage.lib.TvPageLibraryApp"
         android:allowBackup="true"
         android:supportsRtl="true">
 
@@ -15,6 +16,7 @@
             android:name=".FullScreenVideoPlayerActivity"
             android:screenOrientation="landscape"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
+
 
     </application>
 

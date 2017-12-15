@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TvPageVideoWidget">
+
+        <!-- ***** Video Title Text Style Start ***** -->
+        <!--Set Title Text-->
+        <attr name="tvpw_video_title" format="string" />
+
+        <!--Set Title Text Color-->
+        <attr name="tvpw_video_title_text_color" format="color" />
+
+        <!--Set Title Text Background Color -->
+        <attr name="tvpw_video_title_text_background_color" format="color" />
+
+        <!--Set Title Text Gravity-->
+        <attr name="tvpw_video_title_text_gravity" format="enum">
+            <enum name="CENTER" value="0" />
+            <enum name="TOP" value="1" />
+            <enum name="LEFT" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+        </attr>
+
+        <!--Set Title Text Size-->
+        <attr name="tvpw_video_title_text_size" format="dimension" />
+
+        <!--Set Title Text Padding -->
+        <attr name="tvpw_video_title_text_padding" format="dimension" />
+
+        <!--Set Title Text Style-->
+        <attr name="tvpw_video_title_text_style" format="enum">
+            <enum name="BOLD" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="ITALIC" value="2" />
+        </attr>
+
+        <!--  &lt;!&ndash;Set Title Text Visibility&ndash;&gt;
+          <attr name="tvpw_video_title_text_visibility" format="enum">
+              <enum name="VISIBLE" value="1" />
+              <enum name="GONE" value="0" />
+          </attr>-->
+
+
+        <!--Set Title Text Size-->
+        <attr name="tvpw_video_title_font_path" format="string" />
+
+        <!-- ***** Video Title Text Style End ***** -->
+
+        //TODO LOAD MORE
+
+        <!-- ***** Load More Button Style Start ***** -->
+
+        <!--Set Load More Button Text Color-->
+        <attr name="tvpw_load_more_button_text_color" format="color" />
+
+        <!--Set Load More Button Background Color -->
+        <attr name="tvpw_load_more_button_background_color" format="color" />
+
+        <!--Set Load More Button radius -->
+        <attr name="tvpw_load_more_button_radius" format="dimension" />
+
+        <!--Set Load More Button border color -->
+        <attr name="tvpw_load_more_button_border_color" format="color" />
+
+        <!--Set Load More Button border color -->
+        <attr name="tvpw_load_more_button_text" format="string" />
+
+        <!--Set Load More Button border width -->
+        <attr name="tvpw_load_more_button_border_width" format="dimension" />
+
+        <!-- ***** Load More Button Style End ***** -->
+
+        //TODO ITEMS PER PAGE AND ROW
+
+        <!-- ***** ITEMS PER PAGE AND ROW Style Start ***** -->
+
+        <!--Set per page count-->
+        <attr name="tvpw_items_per_page" format="integer" />
+
+        <!--Set set per row count -->
+        <attr name="tvpw_items_per_row" format="integer" />
+
+        <!-- ***** ITEMS PER PAGE AND ROW Style End ***** -->
+
+        //TODO ITEMS STYLES
+        <!-- ***** ITEMS  Text Style Start ***** -->
+
+        <!--Set items Text Color-->
+        <attr name="tvpw_items_text_color" format="color" />
+
+        <!--Set items Text Background Color -->
+        <attr name="tvpw_items_text_background_color" format="color" />
+
+        <!--Set items Text Gravity-->
+        <attr name="tvpw_items_text_gravity" format="enum">
+            <enum name="CENTER" value="0" />
+            <enum name="TOP" value="1" />
+            <enum name="LEFT" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+        </attr>
+
+        <!--Set items Text Size-->
+        <attr name="tvpw_items_text_size" format="dimension" />
+
+        <!--Set items Text Padding -->
+        <attr name="tvpw_items_text_padding" format="dimension" />
+
+        <!--Set items Text Style-->
+        <attr name="tvpw_items_text_style" format="enum">
+            <enum name="BOLD" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="ITALIC" value="2" />
+        </attr>
+
+        <!--Set items Text font path-->
+        <attr name="tvpw_items_title_font_path" format="string" />
+
+        <!-- ***** ITEMS Text Style End ***** -->
+
+        //TODO MODAL OPTIONS
+
+        <!-- Modal Background Style START -->
+
+        <!--Modal background Color-->
+        <attr name="tvpw_modal_background_color" format="color" />
+
+        <!--Modal shadow Color -->
+        <attr name="tvpw_modal_shadow_color" format="color" />
+
+        <!--Modal shadow Color -->
+        <attr name="tvpw_modal_border_color" format="color" />
+
+        <!--Modal Corner radius -->
+        <attr name="tvpw_modal_border_width" format="dimension" />
+
+        <!--Modal Body padding -->
+        <attr name="tvpw_modal_body_padding" format="dimension" />
+
+        <!--Modal Body padding -->
+        <attr name="tvpw_modal_shadow_visibility" format="enum">
+            <enum name="VISIBLE" value="1" />
+            <enum name="GONE" value="0" />
+        </attr>
+
+
+        <!-- Modal Background Style END-->
+
+
+        //TODO MODAL TITLE TEXT STYLE
+
+        <!-- ***** MODAL TITLE TEXT STYLE Start ***** -->
+
+        <!-- Set Modal Title Text Color -->
+        <attr name="tvpw_modal_title_text_color" format="color" />
+
+        <!-- Set Modal Title Text Size -->
+        <attr name="tvpw_modal_title_text_size" format="dimension" />
+
+        <!-- Set Modal Title Text typeface-->
+        <attr name="tvpw_modal_title_text_typeface" format="string" />
+
+
+        <!-- Set Modal Title Text  Style-->
+        <attr name="tvpw_modal_title_text_style" format="enum">
+            <enum name="BOLD" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="ITALIC" value="2" />
+        </attr>
+
+        <!-- Set Modal Title Text  Gravity-->
+        <attr name="tvpw_modal_title_text_position" format="enum">
+            <enum name="CENTER" value="0" />
+            <enum name="TOP" value="1" />
+            <enum name="LEFT" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+        </attr>
+
+        <!-- Set Modal Title Text Padding Top-->
+        <attr name="tvpw_modal_title_text_padding_top" format="dimension" />
+
+        <!-- Set Modal Title Text Padding Left-->
+        <attr name="tvpw_modal_title_text_padding_Left" format="dimension" />
+
+        <!-- Set Modal Title Text Padding Right-->
+        <attr name="tvpw_modal_title_text_padding_Right" format="dimension" />
+
+        <!-- Set Modal Title Text Padding Bottom-->
+        <attr name="tvpw_modal_title_text_padding_bottom" format="dimension" />
+
+        <!-- ***** MODAL TITLE TEXT STYLE End ***** -->
+
+
+        //TODO MODAL PRODUCT TITLE TEXT STYLE
+
+        <!-- ***** MODAL Product TITLE TEXT STYLE Start ***** -->
+
+
+        <!-- Set Modal product Title Text Color -->
+        <attr name="tvpw_modal_product_title_text_color" format="color" />
+
+        <!-- Set Modal product Title Text Size -->
+        <attr name="tvpw_modal_product_title_text_size" format="dimension" />
+
+        <!-- Set Modal product Title Text typeface-->
+        <attr name="tvpw_modal_product_title_text_typeface" format="string" />
+
+
+        <!-- Set Modal product Title Text  Style-->
+        <attr name="tvpw_modal_product_title_text_style" format="enum">
+            <enum name="BOLD" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="ITALIC" value="2" />
+        </attr>
+
+        <!-- Set Modal product Title Text  Gravity-->
+        <attr name="tvpw_modal_product_title_text_gravity" format="enum">
+            <enum name="CENTER" value="0" />
+            <enum name="TOP" value="1" />
+            <enum name="LEFT" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+        </attr>
+        <!-- ***** MODAL Product TITLE TEXT STYLE End ***** -->
+
+        //TODO Close Icon Style
+        <!--Close Icon Style Start-->
+
+        <!--Close Icon Width -->
+        <attr name="tvpw_close_icon_width" format="dimension" />
+
+        <!--Close Icon Height -->
+        <attr name="tvpw_close_icon_height" format="dimension" />
+
+        <!--Close Color -->
+        <attr name="tvpw_close_icon_color" format="color" />
+
+        <!--Close padding -->
+        <attr name="tvpw_close_icon_padding" format="dimension" />
+
+        <!--Close Icon Style End-->
+
+        //TODO Modal Product Popup Background Style
+        <!--MODAL PRODUCT POPUP STYLE START-->
+
+        <!--Product Popup background color-->
+        <attr name="tvpw_product_popup_background_color" format="color" />
+
+        <!--Product Popup border Color-->
+        <attr name="tvpw_product_popup_border_color" format="color" />
+
+        <!--Product Popup border width-->
+        <attr name="tvpw_product_popup_border_width" format="dimension" />
+
+        <!--Product Popup padding-->
+        <attr name="tvpw_product_popup_padding" format="dimension" />
+
+        <!--Product Popup border radius-->
+        <attr name="tvpw_product_popup_border_radius" format="dimension" />
+
+        <!--Product Popup width-->
+        <attr name="tvpw_product_popup_width" format="dimension" />
+
+        <!--product shadow visiblity -->
+        <attr name="tvpw_product_popup_shadow_visibility" format="enum">
+            <enum name="VISIBLE" value="1" />
+            <enum name="GONE" value="0" />
+        </attr>
+
+        <!--Product Popup shadow Color-->
+        <attr name="tvpw_product_popup_shadow_color" format="color" />
+
+        <!--MODAL PRODUCT POPUP STYLE END-->
+
+        <!--MODAL PRODUCT PRICE TEXT STYLE START -->
+
+        <!-- Set Modal product Price Text Color -->
+        <attr name="tvpw_modal_product_price_text_color" format="color" />
+
+        <!-- Set Modal product Price Text Size -->
+        <attr name="tvpw_modal_product_price_text_size" format="dimension" />
+
+        <!-- Set Modal product Price Text typeface-->
+        <attr name="tvpw_modal_product_price_text_typeface" format="string" />
+
+
+        <!-- Set Modal product Price Text  Style-->
+        <attr name="tvpw_modal_product_price_text_style" format="enum">
+            <enum name="BOLD" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="ITALIC" value="2" />
+        </attr>
+
+        <!-- Set Modal product Price Text  Gravity-->
+        <attr name="tvpw_modal_product_price_text_gravity" format="enum">
+            <enum name="CENTER" value="0" />
+            <enum name="TOP" value="1" />
+            <enum name="LEFT" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+        </attr>
+
+        <!--MODAL PRODUCT PRICE TEXT STYLE END -->
+
+        <!--MODAL REVIEW PRICE TEXT STYLE START -->
+
+        <!-- Set Modal product Review Text Color -->
+        <attr name="tvpw_modal_product_review_text_color" format="color" />
+
+        <!-- Set Modal product Review Text Size -->
+        <attr name="tvpw_modal_product_review_text_size" format="dimension" />
+
+        <!-- Set Modal product Review Text typeface-->
+        <attr name="tvpw_modal_product_review_text_typeface" format="string" />
+
+
+        <!-- Set Modal product Review Text  Style-->
+        <attr name="tvpw_modal_product_review_text_style" format="enum">
+            <enum name="BOLD" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="ITALIC" value="2" />
+        </attr>
+
+        <!-- Set Modal product Review Text  Gravity-->
+        <attr name="tvpw_modal_product_review_text_gravity" format="enum">
+            <enum name="CENTER" value="0" />
+            <enum name="TOP" value="1" />
+            <enum name="LEFT" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+        </attr>
+
+        <!--MODAL REVIEW PRICE TEXT STYLE END -->
+
+        <!--MODAL PRODUCT VIEW DETAILS TEXT STYLE START -->
+
+        <!-- Set Modal product CTA Text Color -->
+        <attr name="tvpw_modal_product_cta_text" format="string" />
+
+        <!-- Set Modal product CTA Text Color -->
+        <attr name="tvpw_modal_product_cta_text_color" format="color" />
+
+        <!-- Set Modal product Review Text Size -->
+        <attr name="tvpw_modal_product_cta_text_size" format="dimension" />
+
+        <!-- Set Modal product CTA Text typeface-->
+        <attr name="tvpw_modal_product_cta_text_typeface" format="string" />
+
+
+        <!-- Set Modal product CTA Text  Style-->
+        <attr name="tvpw_modal_product_cta_text_style" format="enum">
+            <enum name="BOLD" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="ITALIC" value="2" />
+        </attr>
+
+        <!-- Set Modal product CTA Text  Gravity-->
+        <attr name="tvpw_modal_product_cta_text_gravity" format="enum">
+            <enum name="CENTER" value="0" />
+            <enum name="TOP" value="1" />
+            <enum name="LEFT" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+        </attr>
+
+        <!-- Set Modal product CTA Text  Style-->
+        <attr name="tvpw_modal_product_cta_text_transformation" format="enum">
+            <enum name="UPPER_CASE" value="0" />
+            <enum name="LOWER_CASE" value="1" />
+        </attr>
+
+        <!--MODAL PRODUCT VIEW DETAILS TEXT STYLE END -->
+
+
+        <!--MODAL PRODUCT CTA BG STYLE START-->
+
+        <!--Product CTA background color-->
+        <attr name="tvpw_product_cta_background_color" format="color" />
+
+        <!--Product CTA border Color-->
+        <attr name="tvpw_product_cta_border_color" format="color" />
+
+        <!--Product CTA border width-->
+        <attr name="tvpw_product_cta_border_width" format="dimension" />
+
+        <!--Product CTA border radius-->
+        <attr name="tvpw_product_cta_border_radius" format="dimension" />
+
+
+        <!--MODAL PRODUCT CTA BG STYLE END-->
+
+        <!--MODAL PRODUCT IMAGE STYLE START-->
+
+        <!--Product Product Image border color-->
+        <attr name="tvpw_product_img_border_color" format="color" />
+
+        <!--Product Product Image border width-->
+        <attr name="tvpw_product_img_border_width" format="dimension" />
+
+        <!--Product Product Image Size-->
+        <attr name="tvpw_product_img_border_size" format="dimension" />
+
+
+        <!--MODAL PRODUCT IMAGE STYLE END-->
+
+
+        <!--MODAL ITEM PLAY BUTTON STYLE START-->
+
+        <!--Item Play Button Background Color-->
+        <attr name="tvpw_item_play_button_background_color" format="color" />
+
+        <!--Item Play Button Background Radius-->
+        <attr name="tvpw_item_play_button_background_radius" format="dimension" />
+
+        <!--Item Play Button Background border  size-->
+        <attr name="tvpw_item_play_button_border_size" format="dimension" />
+
+        <!--Item Play Button Background Border Color-->
+        <attr name="tvpw_item_play_button_background_border_color" format="color" />
+
+        <!--Item Play Icon Color-->
+        <attr name="tvpw_item_play_button_icon_color" format="color" />
+
+        <!--MODAL ITEM PLAY BUTTON STYLE END-->
+
+
+        <!--VIDEO OPTIONS START-->
+
+        <!--set auto video play-->
+        <attr name="tvpw_video_auto_play" format="boolean" />
+        <!--set auto video next-->
+        <attr name="tvpw_video_auto_next" format="boolean" />
+
+        <!--VIDEO OPTIONS END-->
+    </declare-styleable>
+</resources>

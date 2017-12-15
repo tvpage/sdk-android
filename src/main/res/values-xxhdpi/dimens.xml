@@ -1,4 +1,12 @@
 <resources>
     <dimen name="videoview_height">240dp</dimen>
     <dimen name="videoview_home_row_height">170dp</dimen>
+    <dimen name="home_latest_video_item_width">300dp</dimen>
+
+    <dimen name="str_latest_video_text_size">24sp</dimen>
+    <dimen name="str_load_more_text_size">18sp</dimen>
+
+    <dimen name="product_height">120dp</dimen>
+    <dimen name="product_image_width">100dp</dimen>
+    <dimen name="product_width">300dp</dimen>
 </resources>

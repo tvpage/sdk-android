@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
  * Created by MTPC on 10/4/2016.
  */
 
-class MyPreferences {
+public class MyPreferences {
 
     /*SharedPreferences prefs = context.getSharedPreferences(name, mode);
     SharedPreferences.Editor editor = prefs.edit();
@@ -20,6 +20,7 @@ class MyPreferences {
 
     //pref name for login_user id
     public static final String USER_ID_PREF_KEY = "USER_ID_PREF_KEY";
+    public static final String CHANNEL_ID_PREF_KEY = "CHANNEL_ID_PREF_KEY";
 
 
 

@@ -117,9 +117,8 @@ public class TvPageUtils {
     }
 
 
-
-     public static void sout(String object) {
-       // System.out.println("" + object);
+    public static void sout(String object) {
+        // System.out.println("" + object);
     }
 
     public static void loadImageUsingGlide(Context context, String image, ImageView imageView) {
@@ -136,7 +135,6 @@ public class TvPageUtils {
             e.printStackTrace();
         }
     }
-
 
 
     public static OkHttpClient getOkHttpClient() {
@@ -157,6 +155,4 @@ public class TvPageUtils {
             return context.getResources().getColor(id);
         }
     }
-
-
 }
