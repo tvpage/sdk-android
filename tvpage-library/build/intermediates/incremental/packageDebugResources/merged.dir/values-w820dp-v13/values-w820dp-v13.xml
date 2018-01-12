@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="product_height">120dp</dimen>
+    <dimen name="product_image_width">100dp</dimen>
+    <dimen name="product_width">300dp</dimen>
+    <dimen name="str_latest_video_text_size">24sp</dimen>
+    <dimen name="str_load_more_text_size">18sp</dimen>
+</resources>
