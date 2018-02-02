@@ -41,7 +41,6 @@ import static com.tvpage.lib.utils.CommonUtils.PARCABLE_VIDEO_MODEL_KEY;
 
 
 /**
- * Created by MTPC-110 on 4/10/2017.
  */
 
 public class ChannelDetailsFragment extends BaseFragment implements View.OnClickListener, ItemClickListener {

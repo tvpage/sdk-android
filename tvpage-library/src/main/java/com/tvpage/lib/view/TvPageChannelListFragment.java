@@ -36,7 +36,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by MTPC-110 on 4/6/2017.
  */
 
 public class TvPageChannelListFragment extends BaseFragment implements ItemClickListener, View.OnClickListener {

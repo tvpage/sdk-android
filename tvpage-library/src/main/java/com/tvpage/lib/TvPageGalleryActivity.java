@@ -20,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.tvpage.lib.api_listeners.ItemClickListener;
 import com.tvpage.lib.api_listeners.OnTvPageResponseApiListener;
 import com.tvpage.lib.model.TvPageChannelModel;
@@ -41,7 +42,6 @@ import java.util.List;
 import static com.tvpage.lib.utils.CommonUtils.PARCABLE_VIDEO_MODEL_KEY;
 
 /**
- * Created by MTPC-133 on 1/10/2018.
  */
 
 public class TvPageGalleryActivity extends AppCompatActivity implements ItemClickListener, View.OnClickListener {
@@ -90,7 +90,10 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
     }
 
 
-    void init() {
+    /**
+     * init views
+     */
+    private void init() {
         tvPagePlayer = new TvPagePlayer(TvPageGalleryActivity.this);
 
         tvLoadmore = (TextView) findViewById(R.id.tvLoadmore);
@@ -161,7 +164,12 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
     }*/
 
 
-    void showLoadmore(boolean isNedToShowLoadMore) {
+    /**
+     * show hide loader
+     *
+     * @param isNedToShowLoadMore
+     */
+    private void showLoadmore(boolean isNedToShowLoadMore) {
         if (isNedToShowLoadMore) {
             relLoadMore.setVisibility(View.VISIBLE);
         } else {
@@ -169,7 +177,7 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
         }
     }
 
-    void setTitle() {
+    private void setTitle() {
 
         //enabled coach options
 
@@ -193,7 +201,12 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
 
     }
 
-    public void callVideoListApi(final boolean isLoadmOre) {
+    /**
+     * Call Video API
+     *
+     * @param isLoadMore
+     */
+    private void callVideoListApi(final boolean isLoadMore) {
         try {
             if (CommonUtils.isInternetConnected(TvPageGalleryActivity.this)) {
 
@@ -211,10 +224,11 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
 
                                 //setProgressLoadMore(false);
 
-                                if (!isLoadmOre) {
+                                if (!isLoadMore) {
                                     list = new ArrayList<TvPageVideoModel>();
                                 }
 
+                                Log.d("DATA", "onSuccess: " + new Gson().toJson(tvPageResponseModel));
                                 if (tvPageResponseModel != null && tvPageResponseModel.getJsonArray() != null) {
 
                                     try {
@@ -333,7 +347,7 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
 
                                 }
 
-                                setDataToList(isLoadmOre);
+                                setDataToList(isLoadMore);
 
                             }
 
@@ -359,7 +373,10 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
         }
     }
 
-    public void callChannelListApi() {
+    /**
+     * call channel API
+     */
+    private void callChannelListApi() {
         try {
             if (CommonUtils.isInternetConnected(TvPageGalleryActivity.this)) {
 
@@ -440,7 +457,12 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
         }
     }
 
-    void setDataToList(boolean isLoadMore) {
+    /**
+     * set data into list
+     *
+     * @param isLoadMore (pass boolean)
+     */
+    private void setDataToList(boolean isLoadMore) {
         if (list != null && list.size() > 0) {
 
             //System.out.println("Lsit Gallery si>> " + list.size() + " is Load more " + isLoadMore);
@@ -467,7 +489,10 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
         }
     }
 
-    void setChannelDataToList() {
+    /**
+     * set Channel Data into list
+     */
+    private void setChannelDataToList() {
         if (listChannel != null && listChannel.size() > 0) {
             recyclerViewCahnnels.setVisibility(View.VISIBLE);
             tvChannelError.setVisibility(View.GONE);
@@ -658,6 +683,9 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
 //adapters
 
 
+    /**
+     * Video Adapter for recyclerView
+     */
     public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.ViewHolder> {
 
         private List<TvPageVideoModel> mData;
@@ -733,6 +761,9 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
 
     }
 
+    /**
+     * Channel Adapter for recyclerView
+     */
     public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ViewHolder> {
 
         private List<TvPageChannelModel> mData;
@@ -826,6 +857,15 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
 //        }
 //    }
 
+    /**
+     * push fragment
+     *
+     * @param fragment
+     * @param isAddToBackStack
+     * @param isJustAdd
+     * @param shouldAnimate
+     * @param ignorIfCurrent
+     */
     public void pushFragment(final Fragment fragment,
                              boolean isAddToBackStack, boolean isJustAdd,
                              final boolean shouldAnimate, final boolean ignorIfCurrent) {
@@ -877,6 +917,13 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
     }
 
 
+    /**
+     * set Channel ID
+     *
+     * @param context (pass context)
+     * @param id      (pass string ID)
+     * @return
+     */
     public TvPageGalleryActivity setChannelId(Context context, String id) {
         if (CommonUtils.isValidString(id)) {
             MyPreferences.setPref(context, MyPreferences.CHANNEL_ID_PREF_KEY, id);
@@ -884,27 +931,48 @@ public class TvPageGalleryActivity extends AppCompatActivity implements ItemClic
         return this;
     }
 
+    /**
+     * start TvPageGalleryActivity
+     *
+     * @param context pass context
+     * @return
+     */
     public TvPageGalleryActivity startActivity(Context context) {
         if (context != null) {
             if (MyPreferences.getPref(context, MyPreferences.CHANNEL_ID_PREF_KEY) == null) {
                 MyPreferences.setPref(TvPageGalleryActivity.this,
                         MyPreferences.CHANNEL_ID_PREF_KEY, "66133905");//66133905
             }
-            setsContext(context);
+            setContext(context);
             Intent intent = new Intent(context, TvPageGalleryActivity.class);
             context.startActivity(intent);
         }
         return this;
     }
 
+    /**
+     * get Context
+     *
+     * @return Context
+     */
     public Context getContext() {
         return sContext;
     }
 
-    public void setsContext(Context sContext) {
+    /**
+     * set Context
+     *
+     * @param sContext (pass context)
+     */
+    public void setContext(Context sContext) {
         this.sContext = sContext;
     }
 
+    /**
+     * get Gallery Activity instance
+     *
+     * @return TvPageGalleryActivity
+     */
     public static TvPageGalleryActivity getInstance() {
         mActivity = new TvPageGalleryActivity();
         return mActivity;

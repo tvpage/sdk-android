@@ -45,7 +45,6 @@ import static com.tvpage.lib.utils.TvPageUtils.YOUTUBE_PRE_URLS;
 import static com.tvpage.lib.utils.TvPageUtils.YOUTUBE_VIDEO_TYPE;
 
 /**
- * Created by MTPC-133 on 1/10/2018.
  */
 
 public class GalleryVideoDetailsFragment extends BaseFragment implements View.OnClickListener, ItemClickListener {

@@ -17,6 +17,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.provider.Settings;
 import android.support.annotation.IntRange;
 import android.support.annotation.RequiresApi;
@@ -95,7 +97,6 @@ import static com.tvpage.lib.utils.TvPageUtils.getOkHttpClient;
 
 
 /**
- * Created by MTPC-110 on 3/9/2017.
  */
 public class TvPagePlayer extends RelativeLayout implements View.OnClickListener, OnCompletionListener,
         OnPreparedListener, MediaPlayer.OnInfoListener
@@ -150,15 +151,38 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
     /**
      * The M handler.
      */
-    Handler mHandler = new Handler();
+    Handler mHandler = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message message) {
+            // This is where you do your work in the UI thread.
+            // Your worker tells you in the message what to do.
+        }
+    };
+
+
     /**
      * The M handler three second once.
      */
-    Handler mHandlerThreeSecondOnce = new Handler();
+    Handler mHandlerThreeSecondOnce = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message message) {
+            // This is where you do your work in the UI thread.
+            // Your worker tells you in the message what to do.
+        }
+    };
+
+
     /**
      * The M handler three second repeat.
      */
-    Handler mHandlerThreeSecondRepeat = new Handler();
+    Handler mHandlerThreeSecondRepeat = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message message) {
+            // This is where you do your work in the UI thread.
+            // Your worker tells you in the message what to do.
+        }
+    };
+
 
     //private ProgressDialog progressDialog;
 
@@ -2486,9 +2510,8 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
             }
 
 
-
-                videoView.requestFocus();
-                videoView.start();
+            videoView.requestFocus();
+            videoView.start();
 
             //video playing listener
             if (onVideoPlaying != null) {

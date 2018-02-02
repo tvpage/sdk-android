@@ -42,7 +42,6 @@ import java.util.List;
 import static android.view.View.GONE;
 
 /**
- * Created by MTPC-110 on 12/4/2017.
  */
 
 public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnClickListener, ItemClickListener {
@@ -886,6 +885,9 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         view.requestFocus();
     }
 
+    /**
+     * remove fragment from parent fragment
+     */
     protected void doPopBackStack() {
         FragmentManager fragmentManager = TvPageCarouselVideoWidget.this.getChildFragmentManager();
         if (fragmentManager != null && fragmentManager.getBackStackEntryCount() >= 1) {
@@ -893,6 +895,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * on Activity Created
+     *
+     * @param savedInstanceState
+     */
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -903,6 +910,9 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
     }
 
 
+    /**
+     * initialise view
+     */
     /*used to initialise views*/
     private void init() {
         progressRecyclerList = (ProgressBar) rootView.findViewById(R.id.progressRecyclerList);
@@ -1216,6 +1226,12 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * Item click event handle
+     *
+     * @param view
+     * @param position
+     */
     //item click of list
     @Override
     public void onItemClick(View view, int position) {
@@ -1315,6 +1331,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
 
     }
 
+    /**
+     * Set Items Text Color
+     *
+     * @param mItemsTextColor(resource color)
+     */
     public void setItemsTextColor(final int mItemsTextColor) {
         this.mItemsTextColor = mItemsTextColor;
         if (adapter != null) {
@@ -1331,6 +1352,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * Set Items Text Background Color
+     *
+     * @param mItemsTextBackgroundColor(ColorID)
+     */
     public void setItemsTextBackgroundColor(final int mItemsTextBackgroundColor) {
         this.mItemsTextBackgroundColor = mItemsTextBackgroundColor;
         if (adapter != null) {
@@ -1347,6 +1373,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * set Item Text Size
+     *
+     * @param mItemsTextSize
+     */
     public void setItemsTextSize(final float mItemsTextSize) {
         this.mItemsTextSize = mItemsTextSize;
         if (adapter != null) {
@@ -1363,6 +1394,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * Set Item Text Padding
+     *
+     * @param mItemsTextPadding(Pass dimen value)
+     */
     public void setItemsTextPadding(final float mItemsTextPadding) {
         this.mItemsTextPadding = mItemsTextPadding;
         if (adapter != null) {
@@ -1378,6 +1414,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * Set Items Text Gravity
+     *
+     * @param gravity(Pass Enum value Enums.GRAVITY)
+     */
     public void setItemsTextGravity(final Enums.GRAVITY gravity) {
         this.mItemsTextGravity = CommonUtils.getGravity(gravity);
         if (adapter != null) {
@@ -1393,6 +1434,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * Set Items Text Style
+     *
+     * @param mItemsTextStyle(Pass Enum value Enums.FONT_STYLE)
+     */
     public void setItemsTextStyle(final Enums.FONT_STYLE mItemsTextStyle) {
         this.mItemsTextStyle = CommonUtils.getTextStyle(mItemsTextStyle);
         if (adapter != null) {
@@ -1410,6 +1456,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * Set Items Text Type Face
+     *
+     * @param mItemsTextTypeFace(pass path for typeface)
+     */
     public void setItemsTextTypeFace(final String mItemsTextTypeFace) {
         this.mItemsTextTypeFace = mItemsTextTypeFace;
         if (adapter != null) {
@@ -1426,26 +1477,59 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * set Item Play Button Background Color
+     *
+     * @param mItemPlayButtonBackgroundColor(pass resource color)
+     */
     public void setItemPlayButtonBackgroundColor(int mItemPlayButtonBackgroundColor) {
         this.mItemPlayButtonBackgroundColor = mItemPlayButtonBackgroundColor;
     }
 
+    /**
+     * set Item Play Button Background Border Color
+     *
+     * @param mItemPlayButtonBackgroundBorderColor(pass resource color)
+     */
     public void setItemPlayButtonBackgroundBorderColor(int mItemPlayButtonBackgroundBorderColor) {
         this.mItemPlayButtonBackgroundBorderColor = mItemPlayButtonBackgroundBorderColor;
     }
 
+    /**
+     * set Item Play Button Icon Color
+     *
+     * @param mItemPlayButtonIconColor(pass resource color)
+     */
     public void setItemPlayButtonIconColor(int mItemPlayButtonIconColor) {
         this.mItemPlayButtonIconColor = mItemPlayButtonIconColor;
     }
 
+    /**
+     * set Item Play Button Radius
+     *
+     * @param mItemPlayButtonRadius(pass dimen value)
+     */
     public void setItemPlayButtonRadius(float mItemPlayButtonRadius) {
         this.mItemPlayButtonRadius = mItemPlayButtonRadius;
     }
 
+    /**
+     * set Item Play Button Border Size
+     *
+     * @param mItemPlayButtonBorderSize(pass dimen value)
+     */
     public void setItemPlayButtonBorderSize(float mItemPlayButtonBorderSize) {
         this.mItemPlayButtonBorderSize = mItemPlayButtonBorderSize;
     }
 
+    /**
+     * set Item Image OverLay Color
+     *
+     * @param red   (pass int value)
+     * @param green (pass int value)
+     * @param blue  (pass int value)
+     * @param alpha (pass int value)
+     */
     public void setItemImageOverLayColor(int red, int green, int blue, int alpha) {
         mItemImageOverLayRed = red;
         mItemImageOverLayGreen = green;
@@ -1453,6 +1537,14 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         mItemImageOverLayAlpha = alpha;
     }
 
+    /**
+     * set Product Image OverLay Color
+     *
+     * @param red   (pass int value)
+     * @param green (pass int value)
+     * @param blue  (pass int value)
+     * @param alpha (pass int value)
+     */
     public void setProductImageOverLayColor(int red, int green, int blue, int alpha) {
         mProductImageOverLayRed = red;
         mProductImageOverLayGreen = green;
@@ -1460,229 +1552,507 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         mProductImageOverLayAlpha = alpha;
     }
 
+    /**
+     * set Product Image Border Color
+     *
+     * @param mProductImageBorderColor(pass resource color)
+     */
     public void setProductImageBorderColor(int mProductImageBorderColor) {
         this.mProductImageBorderColor = mProductImageBorderColor;
     }
 
+    /**
+     * set Product Image Border Width
+     *
+     * @param mProductImageBorderWidth(pass dimen value)
+     */
     public void setProductImageBorderWidth(float mProductImageBorderWidth) {
         this.mProductImageBorderWidth = mProductImageBorderWidth;
     }
 
+    /**
+     * set Product Image Border Size
+     *
+     * @param mProductImageBorderSize(pass dimen value)
+     */
     public void setProductImageBorderSize(float mProductImageBorderSize) {
         this.mProductImageBorderSize = mProductImageBorderSize;
     }
 
+    /**
+     * set Modal Background Color
+     *
+     * @param mModalBackGroundColor(pass resource color)
+     */
     public void setModalBackGroundColor(int mModalBackGroundColor) {
         this.mModalBackGroundColor = mModalBackGroundColor;
     }
 
+    /**
+     * set Modal Shadow Color
+     *
+     * @param mModalShadowColor(pass resource color)
+     */
     public void setModalShadowColor(int mModalShadowColor) {
         this.mModalShadowColor = mModalShadowColor;
     }
 
+    /**
+     * set Modal Border Color
+     *
+     * @param mModalBorderColor(pass resource color)
+     */
     public void setModalBorderColor(int mModalBorderColor) {
         this.mModalBorderColor = mModalBorderColor;
     }
 
+    /**
+     * set Modal Border Width
+     *
+     * @param mModalBorderWidth(pass resource color)
+     */
     public void setModalBorderWidth(float mModalBorderWidth) {
         this.mModalBorderWidth = mModalBorderWidth;
     }
 
+    /**
+     * set Modal Body Padding
+     *
+     * @param mModalBodyPadding(pass dimen value)
+     */
     public void setModalBodyPadding(float mModalBodyPadding) {
         this.mModalBodyPadding = mModalBodyPadding;
     }
 
+    /**
+     * set Modal Title Text Color
+     *
+     * @param mModalTitleTextColor(pass resource color)
+     */
     public void setModalTitleTextColor(int mModalTitleTextColor) {
         this.mModalTitleTextColor = mModalTitleTextColor;
     }
 
+    /**
+     * set Modal Title Text Style
+     *
+     * @param mModalTitleTextSize(pass dimen value)
+     */
     public void setModalTitleTextSize(float mModalTitleTextSize) {
         this.mModalTitleTextSize = CommonUtils.getValidFloat(mModalTitleTextSize,
                 getResources().getDimension(R.dimen.default_modal_title_text_size));
     }
 
+    /**
+     * Set modal Title text padding top
+     *
+     * @param mModalTitleTextPaddingTop(pass dimen value)
+     */
     public void setModalTitleTextPaddingTop(float mModalTitleTextPaddingTop) {
         this.mModalTitleTextPaddingTop = mModalTitleTextPaddingTop;
     }
 
+    /**
+     * set modal title text padding left
+     *
+     * @param mModalTitleTextPaddingLeft(pass dimen value)
+     */
     public void setModalTitleTextPaddingLeft(float mModalTitleTextPaddingLeft) {
         this.mModalTitleTextPaddingLeft = mModalTitleTextPaddingLeft;
     }
 
+    /**
+     * set Modal title text padding Right
+     *
+     * @param mModalTitleTextPaddingRight(pass dimen value)
+     */
     public void setModalTitleTextPaddingRight(float mModalTitleTextPaddingRight) {
         this.mModalTitleTextPaddingRight = mModalTitleTextPaddingRight;
     }
 
+    /**
+     * set modal title text padding bottom
+     *
+     * @param mModalTitleTextPaddingBottom(pass dimen value)
+     */
     public void setModalTitleTextPaddingBottom(float mModalTitleTextPaddingBottom) {
         this.mModalTitleTextPaddingBottom = mModalTitleTextPaddingBottom;
     }
 
+    /**
+     * set modal title gravity
+     *
+     * @param gravity(pass Enums.GRAVITY value)
+     */
     public void setModalTitleGravity(Enums.GRAVITY gravity) {
         this.mModalTitleGravity = CommonUtils.getGravity(gravity);
     }
 
+    /**
+     * set Modal Title Style
+     *
+     * @param fontstyle(pass Enums.FONT_STYLE value)
+     */
     public void setModalTitleStyle(Enums.FONT_STYLE fontstyle) {
         this.mModalTitleStyle = CommonUtils.getTextStyle(fontstyle);
     }
 
+    /**
+     * Set modal title type face
+     *
+     * @param mModalTitleTypeFace(pass typeface path)
+     */
     public void setModalTitleTypeFace(String mModalTitleTypeFace) {
         this.mModalTitleTypeFace = mModalTitleTypeFace;
     }
 
 
+    /**
+     * set product title text color
+     *
+     * @param mProductTitleTextColor(pass resource color)
+     */
     public void setProductTitleTextColor(int mProductTitleTextColor) {
         this.mProductTitleTextColor = mProductTitleTextColor;
     }
 
+    /**
+     * set Product Title Text Size
+     *
+     * @param mProductTitleTextSize(pass dimen value)
+     */
     public void setProductTitleTextSize(float mProductTitleTextSize) {
         this.mProductTitleTextSize = CommonUtils.getValidFloat(mProductTitleTextSize,
                 getResources().getDimension(R.dimen.default_modal_product_title_size));
     }
 
+    /**
+     * set Product Title Gravity
+     *
+     * @param gravity(pass Enums.GRAVITY value)
+     */
     public void setProductTitleGravity(Enums.GRAVITY gravity) {
         this.mProductTitleGravity = CommonUtils.getGravity(gravity);
     }
 
+    /**
+     * set Product Title Style
+     *
+     * @param fontStyle(Enums.FONT_STYLE value)
+     */
     public void setProductTitleStyle(Enums.FONT_STYLE fontStyle) {
         this.mProductTitleStyle = CommonUtils.getTextStyle(fontStyle);
     }
 
+    /**
+     * set Product Title Type Face
+     *
+     * @param mProductTitleTypeFace(pass font path)
+     */
     public void setProductTitleTypeFace(String mProductTitleTypeFace) {
         this.mProductTitleTypeFace = mProductTitleTypeFace;
     }
 
+    /**
+     * set Close Icon Color
+     *
+     * @param mCloseIconColor(pass resource color)
+     */
     public void setCloseIconColor(int mCloseIconColor) {
         this.mCloseIconColor = mCloseIconColor;
     }
 
+    /**
+     * set Close Icon Width
+     *
+     * @param mCloseIconWidth(pass dimen value)
+     */
     public void setCloseIconWidth(float mCloseIconWidth) {
         this.mCloseIconWidth = mCloseIconWidth;
     }
 
+    /**
+     * setCloseIconHeight
+     *
+     * @param mCloseIconHeight(pass dimen value)
+     */
     public void setCloseIconHeight(float mCloseIconHeight) {
         this.mCloseIconHeight = mCloseIconHeight;
     }
 
+    /**
+     * set Close Icon Padding
+     *
+     * @param mCloseIconPadding(pass dimen value)
+     */
     public void setCloseIconPadding(float mCloseIconPadding) {
         this.mCloseIconPadding = mCloseIconPadding;
     }
 
+    /**
+     * set Product Popup Background Color
+     *
+     * @param mProductPopupBackgroundColor(pass dimen value)
+     */
     public void setProductPopupBackgroundColor(int mProductPopupBackgroundColor) {
         this.mProductPopupBackgroundColor = mProductPopupBackgroundColor;
     }
 
+    /**
+     * set Product Popup Border Color
+     *
+     * @param mProductPopupBorderColor(pass resource color)
+     */
     public void setProductPopupBorderColor(int mProductPopupBorderColor) {
         this.mProductPopupBorderColor = mProductPopupBorderColor;
     }
 
+    /**
+     * set Product Popup Border Width
+     *
+     * @param mProductPopupBorderWidth(pass dimen value)
+     */
     public void setProductPopupBorderWidth(float mProductPopupBorderWidth) {
         this.mProductPopupBorderWidth = mProductPopupBorderWidth;
     }
 
+    /**
+     * set Product Popup Padding
+     *
+     * @param mProductPopupPadding(pass dimen value)
+     */
     public void setProductPopupPadding(float mProductPopupPadding) {
         this.mProductPopupPadding = mProductPopupPadding;
     }
 
+    /**
+     * set Product Popup Border Radius
+     *
+     * @param mProductPopupBorderRadius(pass dimen value)
+     */
     public void setProductPopupBorderRadius(float mProductPopupBorderRadius) {
         this.mProductPopupBorderRadius = mProductPopupBorderRadius;
     }
 
+    /**
+     * set Product Price Text Color
+     *
+     * @param mProductPriceTextColor(pass resource color)
+     */
     public void setProductPriceTextColor(int mProductPriceTextColor) {
         this.mProductPriceTextColor = mProductPriceTextColor;
     }
 
+    /**
+     * set Product Price Text Size
+     *
+     * @param mProductPriceTextSize(pass dimen value)
+     */
     public void setProductPriceTextSize(float mProductPriceTextSize) {
         this.mProductPriceTextSize = CommonUtils.getValidFloat(mProductPriceTextSize,
                 getResources().getDimension(R.dimen.default_modal_product_price_size));
     }
 
+    /**
+     * set Product Price Gravity
+     *
+     * @param gravity(pass Enums.GRAVITY value)
+     */
     public void setProductPriceGravity(Enums.GRAVITY gravity) {
         this.mProductPriceGravity = CommonUtils.getGravity(gravity);
     }
 
+    /**
+     * set Product Price Style
+     *
+     * @param style (pass Enums.FONT_STYLE  style)
+     */
     public void setProductPriceStyle(Enums.FONT_STYLE style) {
         this.mProductPriceStyle = CommonUtils.getTextStyle(style);
     }
 
+    /**
+     * set Product Price TypeFace
+     *
+     * @param mProductPriceTypeFace(pass font path)
+     */
     public void setProductPriceTypeFace(String mProductPriceTypeFace) {
         this.mProductPriceTypeFace = mProductPriceTypeFace;
     }
 
+    /**
+     * set Product Review Text Color
+     *
+     * @param mProductReviewTextColor(pass resource color)
+     */
     public void setProductReviewTextColor(int mProductReviewTextColor) {
         this.mProductReviewTextColor = mProductReviewTextColor;
     }
 
+    /**
+     * set Product Review TextSize
+     *
+     * @param mProductReviewTextSize(pass dimen value)
+     */
     public void setProductReviewTextSize(float mProductReviewTextSize) {
         this.mProductReviewTextSize = CommonUtils.getValidFloat(mProductReviewTextSize,
                 getResources().getDimension(R.dimen.default_modal_product_review_size));
     }
 
+    /**
+     * set Product Review Gravity
+     *
+     * @param gravity(pass Enums.GRAVITY value)
+     */
     public void setProductReviewGravity(Enums.GRAVITY gravity) {
         this.mProductReviewGravity = CommonUtils.getGravity(gravity);
     }
 
+    /**
+     * set Product Review Style
+     *
+     * @param style(pass Enums.FONT_STYLE value)
+     */
     public void setProductReviewStyle(Enums.FONT_STYLE style) {
         this.mProductReviewStyle = CommonUtils.getTextStyle(style);
     }
 
+    /**
+     * set Product Review TypeFace
+     *
+     * @param mProductReviewTypeFace(pass font path)
+     */
     public void setProductReviewTypeFace(String mProductReviewTypeFace) {
         this.mProductReviewTypeFace = mProductReviewTypeFace;
     }
 
 
+    /**
+     * set Product CTA TextColor
+     *
+     * @param mProductCTATextColor(pass resource color)
+     */
     public void setProductCTATextColor(int mProductCTATextColor) {
         this.mProductCTATextColor = mProductCTATextColor;
     }
 
+    /**
+     * set Product CTA TextSize
+     *
+     * @param mProductCTATextSize(pass dimen value)
+     */
     public void setProductCTATextSize(float mProductCTATextSize) {
         this.mProductCTATextSize = CommonUtils.getValidFloat(mProductCTATextSize,
                 getResources().getDimension(R.dimen.default_modal_product_cta_text_size));
     }
 
+    /**
+     * set Product CTA Gravity
+     *
+     * @param gravity(pass Enums.GRAVITY value)
+     */
     public void setProductCTAGravity(Enums.GRAVITY gravity) {
         this.mProductCTAGravity = CommonUtils.getGravity(gravity);
     }
 
+    /**
+     * set Product CTA Style
+     *
+     * @param style(pass Enums.FONT_STYLE value)
+     */
     public void setProductCTAStyle(Enums.FONT_STYLE style) {
         this.mProductCTAStyle = CommonUtils.getTextStyle(style);
     }
 
+    /**
+     * set Product CTA TypeFace
+     *
+     * @param mProductCTATypeFace (pass font path)
+     */
     public void setProductCTATypeFace(String mProductCTATypeFace) {
         this.mProductCTATypeFace = mProductCTATypeFace;
     }
 
+    /**
+     * set Product CTA Text
+     *
+     * @param mProductCTAText(pass title text)
+     */
     public void setProductCTAText(String mProductCTAText) {
         this.mProductCTAText = mProductCTAText;
     }
 
+    /**
+     * set Product CTA Text Transformation
+     *
+     * @param transformation(Enums.TRANSFORMATION value)
+     */
     public void setProductCTATextTransformation(Enums.TRANSFORMATION transformation) {
         this.mProductCTATextTransformation = CommonUtils.getTransformation(transformation);
     }
 
+    /**
+     * set Product CTA BackgroundColor
+     *
+     * @param mProductCTABackgroundColor(pass resource color)
+     */
     public void setProductCTABackgroundColor(int mProductCTABackgroundColor) {
         this.mProductCTABackgroundColor = mProductCTABackgroundColor;
     }
 
+    /**
+     * set Product CTA Border Color
+     *
+     * @param mProductCTABorderColor(pass resource color)
+     */
     public void setProductCTABorderColor(int mProductCTABorderColor) {
         this.mProductCTABorderColor = mProductCTABorderColor;
     }
 
+    /**
+     * set Product CTA Border Width
+     *
+     * @param mProductCTABorderWidth(pass dimen value)
+     */
     public void setProductCTABorderWidth(float mProductCTABorderWidth) {
         this.mProductCTABorderWidth = mProductCTABorderWidth;
     }
 
+    /**
+     * set Product CTA Border Radius
+     *
+     * @param mProductCTABorderRadius(pass dimen value)
+     */
     public void setProductCTABorderRadius(float mProductCTABorderRadius) {
         this.mProductCTABorderRadius = mProductCTABorderRadius;
     }
 
+    /**
+     * set Modal Shadow Visibility
+     *
+     * @param visibility(pass Enums.VISIBILITY value)
+     */
     public void setModalShadowVisibility(Enums.VISIBILITY visibility) {
         this.mModalShadowVisibility = CommonUtils.getVisibility(visibility);
     }
 
+    /**
+     * set Modal Shadow RGB Color
+     *
+     * @param red   (pass int value)
+     * @param green (pass int value)
+     * @param blue  (pass int value)
+     * @param alpha (pass int value)
+     */
     public void setModalShadowRGBColor(int red, int green, int blue, int alpha) {
         this.mModalShadowColor = Color.argb(alpha, red, green, blue);
     }
 
+    /**
+     * set Title Text String
+     *
+     * @param mTitleTextString(pass title text)
+     */
     public void setTitleTextString(String mTitleTextString) {
         if (CommonUtils.isValidString(mTitleTextString)) {
             this.mTitleTextString = mTitleTextString;
@@ -1690,6 +2060,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * set Title Text Color
+     *
+     * @param mTitleTextColor(pass resource color)
+     */
     public void setTitleTextColor(int mTitleTextColor) {
         if (mTitleTextColor != 0
                 && String.valueOf(mTitleTextColor).length() >= 6) {
@@ -1698,6 +2073,11 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * set Title Text Background Color
+     *
+     * @param mTitleTextBackgroundColor(pass resource color)
+     */
     public void setTitleTextBackgroundColor(int mTitleTextBackgroundColor) {
         if (mTitleTextBackgroundColor != 0
                 && String.valueOf(mTitleTextBackgroundColor).length() >= 6) {
@@ -1706,12 +2086,22 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
         }
     }
 
+    /**
+     * set Title Text Size
+     *
+     * @param mTitleTextSize(pass dimen value)
+     */
     public void setTitleTextSize(float mTitleTextSize) {
         this.mTitleTextSize = CommonUtils.getValidFloat(mTitleTextSize,
                 getResources().getDimension(R.dimen.default_video_title_text_size));
         setVideoTitleStyle();
     }
 
+    /**
+     * set Title Text Padding
+     *
+     * @param mTitleTextPadding(pass dimen value)
+     */
     public void setTitleTextPadding(float mTitleTextPadding) {
         this.mTitleTextPadding = mTitleTextPadding;
         setVideoTitleStyle();
@@ -1720,13 +2110,18 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
     /**
      * set Title Font Gravity
      *
-     * @param
+     * @param(pass Enums.GRAVITY value)
      */
     public void setTitleTextGravity(Enums.GRAVITY gravity) {
         this.mTitleTextGravity = CommonUtils.getGravity(gravity);
         setVideoTitleStyle();
     }
 
+    /**
+     * setTitleTextStyle
+     *
+     * @param style(pass Enums.FONT_STYLE value)
+     */
     public void setTitleTextStyle(Enums.FONT_STYLE style) {
         this.mTitleTextStyle = CommonUtils.getTextStyle(style);
         setVideoTitleStyle();
@@ -1737,38 +2132,81 @@ public class TvPageCarouselVideoWidget extends BaseFragment implements View.OnCl
 //        setVideoTitleStyle();
 //    }
 
+    /**
+     * set Title Text Type Face
+     *
+     * @param mTitleTextTypeFace(pass font path)
+     */
     public void setTitleTextTypeFace(String mTitleTextTypeFace) {
         this.mTitleTextTypeFace = mTitleTextTypeFace;
         setVideoTitleStyle();
     }
 
+    /**
+     * set Items Per Page
+     *
+     * @param mItemsPerPage(pass item count)
+     */
     public void setItemsPerPage(int mItemsPerPage) {
         if (mItemsPerPage != 0)
             this.mItemsPerPage = mItemsPerPage;
     }
 
 
+    /**
+     * set Product Shadow Visibility
+     *
+     * @param visibility (pass Enums.VISIBILITY value)
+     */
     public void setProductShadowVisibility(Enums.VISIBILITY visibility) {
         this.mProductShadowVisibility = CommonUtils.getVisibility(visibility);
     }
 
+    /**
+     * set Product Shadow Color
+     *
+     * @param mProductShadowColor(pass resource color)
+     */
     public void setProductShadowColor(int mProductShadowColor) {
         this.mProductShadowColor = mProductShadowColor;
     }
 
+    /**
+     * set Product Shadow Color
+     *
+     * @param red   (pass int value)
+     * @param green (pass int value)
+     * @param blue  (pass int value)
+     * @param alpha (pass int value)
+     */
     public void setProductShadowColor(int red, int green, int blue, int alpha) {
         this.mProductShadowColor = Color.argb(alpha, red, green, blue);
     }
 
 
+    /**
+     * set Auto Video Play
+     *
+     * @param autoVideoPlay(pass boolean)
+     */
     public void setAutoVideoPlay(boolean autoVideoPlay) {
         isAutoVideoPlay = autoVideoPlay;
     }
 
+    /**
+     * set Auto Video Next
+     *
+     * @param autoVideoNext(pass boolean)
+     */
     public void setAutoVideoNext(boolean autoVideoNext) {
         isAutoVideoNext = autoVideoNext;
     }
 
+    /**
+     * set Product Popup Width
+     *
+     * @param mProductPopupWidth(pass dimen value)
+     */
     public void setProductPopupWidth(float mProductPopupWidth) {
         this.mProductPopupWidth = mProductPopupWidth;
     }
