@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtLatestVideo"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+    <!--android:background="@drawable/dotted"-->
+    <!--android:text="Latest Video" />-->
+
+    <LinearLayout
+        android:id="@+id/llHeaderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtLatestVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Recommnded Video" />
+
+        <View
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:layerType="software"
+            android:background="@drawable/dotted" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llHeaderView"
+        android:layout_marginTop="@dimen/common_10_dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerLatestVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:nestedScrollingEnabled="false" />
+
+
+            <TextView
+                android:id="@+id/tvVideoError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_videos_found"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/relLoadMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/recyclerLatestVideo"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:layout_marginLeft="@dimen/common_10_dp"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:paddingBottom="@dimen/common_10_dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtLoadMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/common_10_dp"
+                    android:tag="load_more" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressRecyclerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transperant_black"
+        android:clickable="false"
+        android:tag="fragment_container">
+
+
+    </FrameLayout>
+</RelativeLayout>

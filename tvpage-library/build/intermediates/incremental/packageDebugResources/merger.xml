@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res"><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\ic_close.xml" preprocessing="true" qualifiers=""><generated-file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\pngs\debug\drawable-xxxhdpi\ic_close.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\pngs\debug\drawable-mdpi\ic_close.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\pngs\debug\drawable-ldpi\ic_close.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\pngs\debug\drawable-xxhdpi\ic_close.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\pngs\debug\drawable-hdpi\ic_close.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\pngs\debug\drawable-xhdpi\ic_close.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\pngs\debug\drawable-anydpi-v21\ic_close.xml" qualifiers="anydpi-v21" type="drawable"/></file></source><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\rs\debug"/><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\resValues\debug"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res"><file name="alpha" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\anim\alpha.xml" qualifiers="" type="anim"/><file name="translate" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\anim\translate.xml" qualifiers="" type="anim"/><file name="bg_black" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\bg_black.xml" qualifiers="" type="drawable"/><file name="bg_modal" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\bg_modal.xml" qualifiers="" type="drawable"/><file name="bg_play_button" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\bg_play_button.xml" qualifiers="" type="drawable"/><file name="bg_product" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\bg_product.xml" qualifiers="" type="drawable"/><file name="bg_product_img" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\bg_product_img.xml" qualifiers="" type="drawable"/><file name="dotted" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\dotted.xml" qualifiers="" type="drawable"/><file name="img_black" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\img_black.xml" qualifiers="" type="drawable"/><file name="modal_shadow" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\modal_shadow.xml" qualifiers="" type="drawable"/><file name="placeholder" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\placeholder.png" qualifiers="" type="drawable"/><file name="seekbar_drawables" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable\seekbar_drawables.xml" qualifiers="" type="drawable"/><file name="brands_home" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-hdpi\brands_home.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_play_arrow" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-hdpi\ic_play_arrow.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_play_arrow" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-mdpi\ic_play_arrow.png" qualifiers="mdpi-v4" type="drawable"/><file name="brands_home" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xhdpi\brands_home.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_play_arrow" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xhdpi\ic_play_arrow.png" qualifiers="xhdpi-v4" type="drawable"/><file name="brands_home" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\brands_home.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="detail_coupon" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\detail_coupon.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_fullscreen" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_fullscreen.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_fullscreen_exit" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_fullscreen_exit.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_media_fullscreen_shrink" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_media_fullscreen_shrink.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_media_fullscreen_stretch" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_media_fullscreen_stretch.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_media_pause" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_media_pause.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_media_play" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_media_play.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_play_arrow" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_play_arrow.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_quality_settings" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_quality_settings.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_stop" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_stop.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_volume_off" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_volume_off.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_volume_up" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\ic_volume_up.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="left_arrow" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\left_arrow.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="logo_header_n" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\logo_header_n.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="menu_n" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\menu_n.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="message_gallery_channel" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\message_gallery_channel.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="search_n" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\search_n.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="shopping_bag_n" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\shopping_bag_n.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="spinner_drop_down" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\spinner_drop_down.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="triangle" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\triangle.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="video_galley_n" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxhdpi\video_galley_n.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="brands_home" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxxhdpi\brands_home.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="icon_btnplay" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxxhdpi\icon_btnplay.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="ic_play_arrow" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\drawable-xxxhdpi\ic_play_arrow.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="adapter_spinner_product_cat" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\adapter_spinner_product_cat.xml" qualifiers="" type="layout"/><file name="adapter_spinner_quality" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\adapter_spinner_quality.xml" qualifiers="" type="layout"/><file name="app_header" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\app_header.xml" qualifiers="" type="layout"/><file name="fragment_gallery_channel_videos" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\fragment_gallery_channel_videos.xml" qualifiers="" type="layout"/><file name="fragment_latest_video_details" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\fragment_latest_video_details.xml" qualifiers="" type="layout"/><file name="fragment_video_detail" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\fragment_video_detail.xml" qualifiers="" type="layout"/><file name="item_channel_video_gallery" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\item_channel_video_gallery.xml" qualifiers="" type="layout"/><file name="item_horizonal" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\item_horizonal.xml" qualifiers="" type="layout"/><file name="item_latest_videos_carousel" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\item_latest_videos_carousel.xml" qualifiers="" type="layout"/><file name="item_latest_videos_sidebar" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\item_latest_videos_sidebar.xml" qualifiers="" type="layout"/><file name="item_products" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\item_products.xml" qualifiers="" type="layout"/><file name="item_solo_video" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\item_solo_video.xml" qualifiers="" type="layout"/><file name="item_videos_gallery_list" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\item_videos_gallery_list.xml" qualifiers="" type="layout"/><file name="tvpage_player" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\tvpage_player.xml" qualifiers="" type="layout"/><file name="tvpage_player_carousel_latest_video_widget" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\tvpage_player_carousel_latest_video_widget.xml" qualifiers="" type="layout"/><file name="tvpage_player_sidebar_latest_video_widget" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\tvpage_player_sidebar_latest_video_widget.xml" qualifiers="" type="layout"/><file name="tvpage_player_solo_widget" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\tvpage_player_solo_widget.xml" qualifiers="" type="layout"/><file name="tvpage_video_gallery" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\tvpage_video_gallery.xml" qualifiers="" type="layout"/><file name="zoomable_view" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout\zoomable_view.xml" qualifiers="" type="layout"/><file name="activity_full_screen" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout-land\activity_full_screen.xml" qualifiers="land" type="layout"/><file name="tvpage_player" path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\layout-land\tvpage_player.xml" qualifiers="land" type="layout"/><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="TvPageVideoWidget">
+
+        
+        
+        <attr format="string" name="tvpw_video_title"/>
+
+        
+        <attr format="color" name="tvpw_video_title_text_color"/>
+
+        
+        <attr format="color" name="tvpw_video_title_text_background_color"/>
+
+        
+        <attr format="enum" name="tvpw_video_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_video_title_text_size"/>
+
+        
+        <attr format="dimension" name="tvpw_video_title_text_padding"/>
+
+        
+        <attr format="enum" name="tvpw_video_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+
+
+        
+        <attr format="string" name="tvpw_video_title_font_path"/>
+
+        
+
+        //TODO LOAD MORE
+
+        
+
+        
+        <attr format="color" name="tvpw_load_more_button_text_color"/>
+
+        
+        <attr format="color" name="tvpw_load_more_button_background_color"/>
+
+        
+        <attr format="dimension" name="tvpw_load_more_button_radius"/>
+
+        
+        <attr format="color" name="tvpw_load_more_button_border_color"/>
+
+        
+        <attr format="string" name="tvpw_load_more_button_text"/>
+
+        
+        <attr format="dimension" name="tvpw_load_more_button_border_width"/>
+
+        
+
+        //TODO ITEMS PER PAGE AND ROW
+
+        
+
+        
+        <attr format="integer" name="tvpw_items_per_page"/>
+
+        
+        <attr format="integer" name="tvpw_items_per_row"/>
+
+        
+
+        //TODO ITEMS STYLES
+        
+
+        
+        <attr format="color" name="tvpw_items_text_color"/>
+
+        
+        <attr format="color" name="tvpw_items_text_background_color"/>
+
+        
+        <attr format="enum" name="tvpw_items_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_items_text_size"/>
+
+        
+        <attr format="dimension" name="tvpw_items_text_padding"/>
+
+        
+        <attr format="enum" name="tvpw_items_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="string" name="tvpw_items_title_font_path"/>
+
+        
+
+        //TODO MODAL OPTIONS
+
+        
+
+        
+        <attr format="color" name="tvpw_modal_background_color"/>
+
+        
+        <attr format="color" name="tvpw_modal_shadow_color"/>
+
+        
+        <attr format="color" name="tvpw_modal_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_body_padding"/>
+
+        
+        <attr format="enum" name="tvpw_modal_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr>
+
+
+        
+
+
+        //TODO MODAL TITLE TEXT STYLE
+
+        
+
+        
+        <attr format="color" name="tvpw_modal_title_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_title_text_size"/>
+
+        
+        <attr format="string" name="tvpw_modal_title_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_modal_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_modal_title_text_position">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_modal_title_text_padding_top"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_title_text_padding_Left"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_title_text_padding_Right"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_title_text_padding_bottom"/>
+
+        
+
+
+        //TODO MODAL PRODUCT TITLE TEXT STYLE
+
+        
+
+
+        
+        <attr format="color" name="tvpw_modal_product_title_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_product_title_text_size"/>
+
+        
+        <attr format="string" name="tvpw_modal_product_title_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_modal_product_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_modal_product_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+        
+
+        //TODO Close Icon Style
+        
+
+        
+        <attr format="dimension" name="tvpw_close_icon_width"/>
+
+        
+        <attr format="dimension" name="tvpw_close_icon_height"/>
+
+        
+        <attr format="color" name="tvpw_close_icon_color"/>
+
+        
+        <attr format="dimension" name="tvpw_close_icon_padding"/>
+
+        
+
+        //TODO Modal Product Popup Background Style
+        
+
+        
+        <attr format="color" name="tvpw_product_popup_background_color"/>
+
+        
+        <attr format="color" name="tvpw_product_popup_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_product_popup_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_product_popup_padding"/>
+
+        
+        <attr format="dimension" name="tvpw_product_popup_border_radius"/>
+
+        
+        <attr format="dimension" name="tvpw_product_popup_width"/>
+
+        
+        <attr format="enum" name="tvpw_product_popup_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr>
+
+        
+        <attr format="color" name="tvpw_product_popup_shadow_color"/>
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_modal_product_price_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_product_price_text_size"/>
+
+        
+        <attr format="string" name="tvpw_modal_product_price_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_modal_product_price_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_modal_product_price_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_modal_product_review_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_product_review_text_size"/>
+
+        
+        <attr format="string" name="tvpw_modal_product_review_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_modal_product_review_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_modal_product_review_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+
+        
+
+        
+        <attr format="string" name="tvpw_modal_product_cta_text"/>
+
+        
+        <attr format="color" name="tvpw_modal_product_cta_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_modal_product_cta_text_size"/>
+
+        
+        <attr format="string" name="tvpw_modal_product_cta_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_modal_product_cta_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_modal_product_cta_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_modal_product_cta_text_transformation">
+            <enum name="UPPER_CASE" value="0"/>
+            <enum name="LOWER_CASE" value="1"/>
+        </attr>
+
+        
+
+
+        
+
+        
+        <attr format="color" name="tvpw_product_cta_background_color"/>
+
+        
+        <attr format="color" name="tvpw_product_cta_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_product_cta_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_product_cta_border_radius"/>
+
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_product_img_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_product_img_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_product_img_border_size"/>
+
+
+        
+
+
+        
+
+        
+        <attr format="color" name="tvpw_item_play_button_background_color"/>
+
+        
+        <attr format="dimension" name="tvpw_item_play_button_background_radius"/>
+
+        
+        <attr format="dimension" name="tvpw_item_play_button_border_size"/>
+
+        
+        <attr format="color" name="tvpw_item_play_button_background_border_color"/>
+
+        
+        <attr format="color" name="tvpw_item_play_button_icon_color"/>
+
+        
+
+
+        
+
+        
+        <attr format="boolean" name="tvpw_video_auto_play"/>
+        
+        <attr format="boolean" name="tvpw_video_auto_next"/>
+
+        
+    </declare-styleable></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values\carousel_attrs.xml" qualifiers=""><declare-styleable name="TvPageVideoWidgetCarousel">
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_items_text_color"/>
+
+        
+        <attr format="color" name="tvpw_carousel_items_text_background_color"/>
+
+        
+        <attr format="enum" name="tvpw_carousel_items_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_carousel_items_text_size"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_items_text_padding"/>
+
+        
+        <attr format="enum" name="tvpw_carousel_items_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="string" name="tvpw_carousel_items_title_font_path"/>
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_item_play_button_background_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_item_play_button_background_radius"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_item_play_button_border_size"/>
+
+        
+        <attr format="color" name="tvpw_carousel_item_play_button_background_border_color"/>
+
+        
+        <attr format="color" name="tvpw_carousel_item_play_button_icon_color"/>
+
+        
+
+        //TODO MODAL OPTIONS
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_modal_background_color"/>
+
+        
+        <attr format="color" name="tvpw_carousel_modal_shadow_color"/>
+
+        
+        <attr format="color" name="tvpw_carousel_modal_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_body_padding"/>
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr>
+
+
+        
+
+
+        //TODO MODAL TITLE TEXT STYLE
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_modal_title_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_title_text_size"/>
+
+        
+        <attr format="string" name="tvpw_carousel_modal_title_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_title_text_position">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_title_text_padding_top"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_title_text_padding_Left"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_title_text_padding_Right"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_title_text_padding_bottom"/>
+
+        
+
+
+        //TODO MODAL PRODUCT TITLE TEXT STYLE
+
+        
+
+
+        
+        <attr format="color" name="tvpw_carousel_modal_product_title_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_product_title_text_size"/>
+
+        
+        <attr format="string" name="tvpw_carousel_modal_product_title_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+        
+
+        //TODO Close Icon Style
+        
+
+        
+        <attr format="dimension" name="tvpw_carousel_close_icon_width"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_close_icon_height"/>
+
+        
+        <attr format="color" name="tvpw_carousel_close_icon_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_close_icon_padding"/>
+
+        
+
+
+        //TODO Modal Product Popup Background Style
+        
+
+        
+        <attr format="color" name="tvpw_carousel_product_popup_background_color"/>
+
+        
+        <attr format="color" name="tvpw_carousel_product_popup_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_popup_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_popup_padding"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_popup_border_radius"/>
+
+        
+        <attr format="enum" name="tvpw_carousel_product_popup_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_popup_width"/>
+
+        
+        <attr format="color" name="tvpw_carousel_product_popup_shadow_color"/>
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_modal_product_price_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_product_price_text_size"/>
+
+        
+        <attr format="string" name="tvpw_carousel_modal_product_price_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_price_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_price_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_modal_product_review_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_product_review_text_size"/>
+
+        
+        <attr format="string" name="tvpw_carousel_modal_product_review_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_review_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_review_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+
+        
+
+        
+        <attr format="string" name="tvpw_carousel_modal_product_cta_text"/>
+
+        
+        <attr format="color" name="tvpw_carousel_modal_product_cta_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_modal_product_cta_text_size"/>
+
+        
+        <attr format="string" name="tvpw_carousel_modal_product_cta_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_cta_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_cta_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_carousel_modal_product_cta_text_transformation">
+            <enum name="UPPER_CASE" value="0"/>
+            <enum name="LOWER_CASE" value="1"/>
+        </attr>
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_product_cta_background_color"/>
+
+        
+        <attr format="color" name="tvpw_carousel_product_cta_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_cta_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_cta_border_radius"/>
+
+
+        
+
+
+        
+
+        
+        <attr format="color" name="tvpw_carousel_product_img_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_img_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_product_img_border_size"/>
+
+
+        
+
+
+        
+        
+        <attr format="string" name="tvpw_carousel_video_title"/>
+
+        
+        <attr format="color" name="tvpw_carousel_video_title_text_color"/>
+
+        
+        <attr format="color" name="tvpw_carousel_video_title_text_background_color"/>
+
+        
+        <attr format="enum" name="tvpw_carousel_video_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_carousel_video_title_text_size"/>
+
+        
+        <attr format="dimension" name="tvpw_carousel_video_title_text_padding"/>
+
+        
+        <attr format="enum" name="tvpw_carousel_video_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+
+
+        
+        <attr format="string" name="tvpw_carousel_video_title_font_path"/>
+
+        
+
+
+        //TODO ITEMS PER PAGE AND ROW
+
+        
+
+        
+        <attr format="integer" name="tvpw_carousel_items_per_page"/>
+
+        
+
+
+        
+
+        
+        <attr format="boolean" name="tvpw_carousel_video_auto_play"/>
+        
+        <attr format="boolean" name="tvpw_carousel_video_auto_next"/>
+
+        
+
+    </declare-styleable></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values\colors.xml" qualifiers=""><color name="red">#80FF0000</color><color name="white">#FFFFFF</color><color name="red_transperent">#44FF0000</color><color name="seekbarBackground">#646262</color><color name="playerBackground">#3C3A3C</color><color name="qualityBackground">#F68026</color><color name="qualityBackgroundTrans">#99F68026</color><color name="rowBackground">#ffffff</color><color name="black">#000000</color><color name="transperant_black">#22000000</color><color name="price_text_color">#21E0C8</color><color name="gray">#B2C6B8</color><color name="grey_carousel_h_scroll">#D3D3D3</color><color name="home_text_background">#05CAAF</color><color name="default_load_more_bg_color">#1F1D26</color><color name="default_load_more_border_color">#333333</color><color name="default_title_text_color">#333333</color><color name="default_modal_title_text_color">#333333</color><color name="default_modal_product_title_text_color">#333333</color><color name="default_popup_bg_color">#ffffff</color><color name="default_popup_border_color">#000000</color><color name="default_modal_product_price_text_color">#333333</color><color name="default_modal_product_review_text_color">#333333</color><color name="default_modal_product_cta_border_color">#333333</color><color name="default_modal_product_cta_text_color">#ffffff</color><color name="default_modal_product_cta_bg_color">#333333</color><color name="default_item_play_button_bg_color">#ffffff</color><color name="default_item_play_button_color">#000000</color><color name="default_item_play_button_border_color">#000000</color><color name="app_background">#2B6372</color><color name="gallery_product_videos_type_background">#1F1D26</color></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="common_10_dp">10dp</dimen><dimen name="common_1_dp">1dp</dimen><dimen name="str_latest_video_text_size">24sp</dimen><dimen name="str_load_more_text_size">18sp</dimen><dimen name="common_5_dp">5dp</dimen><dimen name="common_35_dp">35dp</dimen><dimen name="common_30_dp">30dp</dimen><dimen name="common_15_dp">15dp</dimen><dimen name="common_20_dp">20dp</dimen><dimen name="common_25_dp">25dp</dimen><dimen name="common_text_10_sp">10sp</dimen><dimen name="common_text_12_sp">12sp</dimen><dimen name="common_text_14_sp">14sp</dimen><dimen name="common_text_16_sp">16sp</dimen><dimen name="product_height">120dp</dimen><dimen name="product_image_width">100dp</dimen><dimen name="product_width">300dp</dimen><dimen name="default_video_title_padding">0dp</dimen><dimen name="default_video_title_text_size">18px</dimen><dimen name="default_load_more_radius">0dp</dimen><dimen name="default_load_more_border_width">1px</dimen><dimen name="default_items_title_padding">0dp</dimen><dimen name="default_items_title_text_size">12px</dimen><dimen name="default_modal_title_padding_top">25px</dimen><dimen name="default_modal_title_padding_right_left">15px</dimen><dimen name="default_modal_title_padding_right">5px</dimen><dimen name="default_modal_title_text_size">16px</dimen><dimen name="common_0_dp">0dp</dimen><dimen name="default_modal_product_title_size">14px</dimen><dimen name="default_modal_close_icon_width_height">27px</dimen><dimen name="default_modal_close_icon_padding">3px</dimen><dimen name="default_product_popup_border_width">1px</dimen><dimen name="default_product_popup_border_padding">10px</dimen><dimen name="default_product_popup_width">280dp</dimen><dimen name="default_modal_product_price_size">16px</dimen><dimen name="default_modal_product_review_size">12px</dimen><dimen name="default_modal_product_cta_text_size">14px</dimen><dimen name="default_item_play_button_radius">20dp</dimen><dimen name="default_item_play_button_border">1px</dimen><dimen name="default_carousel_video_title_padding">0dp</dimen><dimen name="default_carousel_video_title_text_size">18px</dimen></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values\solo_attrs.xml" qualifiers=""><declare-styleable name="TvPageVideoSoloWidget">
+
+        
+        <attr format="string" name="tvpw_solo_product_id"/>
+
+
+        //TODO ITEMS STYLES
+        
+
+        
+        <attr format="color" name="tvpw_solo_items_text_color"/>
+
+        
+        <attr format="color" name="tvpw_solo_items_text_background_color"/>
+
+        
+        <attr format="enum" name="tvpw_solo_items_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_solo_items_text_size"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_items_text_padding"/>
+
+        
+        <attr format="enum" name="tvpw_solo_items_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="string" name="tvpw_solo_items_title_font_path"/>
+
+        
+
+        //TODO MODAL OPTIONS
+
+        
+
+        
+        <attr format="color" name="tvpw_solo_modal_background_color"/>
+
+        
+        <attr format="color" name="tvpw_solo_modal_shadow_color"/>
+
+        
+        <attr format="color" name="tvpw_solo_modal_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_body_padding"/>
+
+        
+        <attr format="enum" name="tvpw_solo_modal_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr>
+
+
+        
+
+
+        //TODO MODAL TITLE TEXT STYLE
+
+        
+
+        
+        <attr format="color" name="tvpw_solo_modal_title_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_title_text_size"/>
+
+        
+        <attr format="string" name="tvpw_solo_modal_title_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_solo_modal_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_solo_modal_title_text_position">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_title_text_padding_top"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_title_text_padding_Left"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_title_text_padding_Right"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_title_text_padding_bottom"/>
+
+        
+
+
+        //TODO MODAL PRODUCT TITLE TEXT STYLE
+
+        
+
+
+        
+        <attr format="color" name="tvpw_solo_modal_product_title_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_product_title_text_size"/>
+
+        
+        <attr format="string" name="tvpw_solo_modal_product_title_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+        
+
+        //TODO Close Icon Style
+        
+
+        
+        <attr format="dimension" name="tvpw_solo_close_icon_width"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_close_icon_height"/>
+
+        
+        <attr format="color" name="tvpw_solo_close_icon_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_close_icon_padding"/>
+
+        
+
+        //TODO Modal Product Popup Background Style
+        
+
+        
+        <attr format="color" name="tvpw_solo_product_popup_background_color"/>
+
+        
+        <attr format="color" name="tvpw_solo_product_popup_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_popup_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_popup_padding"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_popup_border_radius"/>
+
+        
+        <attr format="enum" name="tvpw_solo_product_popup_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_popup_width"/>
+
+        
+        <attr format="color" name="tvpw_solo_product_popup_shadow_color"/>
+
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_solo_modal_product_price_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_product_price_text_size"/>
+
+        
+        <attr format="string" name="tvpw_solo_modal_product_price_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_price_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_price_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_solo_modal_product_review_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_product_review_text_size"/>
+
+        
+        <attr format="string" name="tvpw_solo_modal_product_review_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_review_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_review_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+
+        
+
+        
+        <attr format="string" name="tvpw_solo_modal_product_cta_text"/>
+
+        
+        <attr format="color" name="tvpw_solo_modal_product_cta_text_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_modal_product_cta_text_size"/>
+
+        
+        <attr format="string" name="tvpw_solo_modal_product_cta_text_typeface"/>
+
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_cta_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_cta_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr>
+
+        
+        <attr format="enum" name="tvpw_solo_modal_product_cta_text_transformation">
+            <enum name="UPPER_CASE" value="0"/>
+            <enum name="LOWER_CASE" value="1"/>
+        </attr>
+
+        
+
+
+        
+
+        
+        <attr format="color" name="tvpw_solo_product_cta_background_color"/>
+
+        
+        <attr format="color" name="tvpw_solo_product_cta_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_cta_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_cta_border_radius"/>
+
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_solo_product_img_border_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_img_border_width"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_product_img_border_size"/>
+
+
+        
+
+        
+
+        
+        <attr format="color" name="tvpw_solo_item_play_button_background_color"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_item_play_button_background_radius"/>
+
+        
+        <attr format="dimension" name="tvpw_solo_item_play_button_border_size"/>
+
+        
+        <attr format="color" name="tvpw_solo_item_play_button_background_border_color"/>
+
+        
+        <attr format="color" name="tvpw_solo_item_play_button_icon_color"/>
+
+        
+
+        
+
+        
+        <attr format="boolean" name="tvpw_solo_video_auto_play"/>
+        
+        <attr format="boolean" name="tvpw_solo_video_auto_next"/>
+
+        
+
+    </declare-styleable></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values\strings.xml" qualifiers=""><string name="no_internet_connection">No Internet Connection</string><string name="load_more">LOAD MORE</string><string name="no_videos_found">No Videos Found</string><string name="view_details">View Details</string><string name="subscribe_to">SUBSCRIBE TO CHANNEL</string></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values\styles.xml" qualifiers=""><style name="marginLeftRight">
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values-hdpi\dimens.xml" qualifiers="hdpi-v4"><dimen name="videoview_height">220dp</dimen><dimen name="videoview_home_row_height">160dp</dimen><dimen name="home_latest_video_item_width">260dp</dimen><dimen name="str_latest_video_text_size">24sp</dimen><dimen name="str_load_more_text_size">18sp</dimen><dimen name="product_height">120dp</dimen><dimen name="product_image_width">100dp</dimen><dimen name="product_width">300dp</dimen><dimen name="img_gallery_channel_top_height">150dp</dimen></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen><dimen name="str_latest_video_text_size">24sp</dimen><dimen name="str_load_more_text_size">18sp</dimen><dimen name="product_height">120dp</dimen><dimen name="product_image_width">100dp</dimen><dimen name="product_width">300dp</dimen></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values-xhdpi\dimens.xml" qualifiers="xhdpi-v4"><dimen name="videoview_height">240dp</dimen><dimen name="videoview_home_row_height">170dp</dimen><dimen name="home_latest_video_item_width">300dp</dimen><dimen name="str_latest_video_text_size">24sp</dimen><dimen name="str_load_more_text_size">18sp</dimen><dimen name="product_height">120dp</dimen><dimen name="product_image_width">100dp</dimen><dimen name="product_width">300dp</dimen></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values-xxhdpi\dimens.xml" qualifiers="xxhdpi-v4"><dimen name="videoview_height">240dp</dimen><dimen name="videoview_home_row_height">170dp</dimen><dimen name="home_latest_video_item_width">300dp</dimen><dimen name="str_latest_video_text_size">24sp</dimen><dimen name="str_load_more_text_size">18sp</dimen><dimen name="product_height">120dp</dimen><dimen name="product_image_width">100dp</dimen><dimen name="product_width">300dp</dimen></file><file path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\main\res\values-xxxhdpi\dimens.xml" qualifiers="xxxhdpi-v4"><dimen name="videoview_height">260dp</dimen><dimen name="videoview_home_row_height">170dp</dimen><dimen name="home_latest_video_item_width">310dp</dimen><dimen name="str_latest_video_text_size">24sp</dimen><dimen name="str_load_more_text_size">18sp</dimen><dimen name="product_height">120dp</dimen><dimen name="product_image_width">100dp</dimen><dimen name="product_width">300dp</dimen></file></source><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\rs\debug"/><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\debug\res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="D:\Ronak_studio\Ronak_workspace\tvpage-sdk-phase2-android\Source\TvPageApp2\tvpage-library\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="TvPageVideoSoloWidget"><attr format="string" name="tvpw_solo_product_id"/><attr format="color" name="tvpw_solo_items_text_color"/><attr format="color" name="tvpw_solo_items_text_background_color"/><attr format="enum" name="tvpw_solo_items_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_solo_items_text_size"/><attr format="dimension" name="tvpw_solo_items_text_padding"/><attr format="enum" name="tvpw_solo_items_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="string" name="tvpw_solo_items_title_font_path"/><attr format="color" name="tvpw_solo_modal_background_color"/><attr format="color" name="tvpw_solo_modal_shadow_color"/><attr format="color" name="tvpw_solo_modal_border_color"/><attr format="dimension" name="tvpw_solo_modal_border_width"/><attr format="dimension" name="tvpw_solo_modal_body_padding"/><attr format="enum" name="tvpw_solo_modal_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr><attr format="color" name="tvpw_solo_modal_title_text_color"/><attr format="dimension" name="tvpw_solo_modal_title_text_size"/><attr format="string" name="tvpw_solo_modal_title_text_typeface"/><attr format="enum" name="tvpw_solo_modal_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_solo_modal_title_text_position">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_solo_modal_title_text_padding_top"/><attr format="dimension" name="tvpw_solo_modal_title_text_padding_Left"/><attr format="dimension" name="tvpw_solo_modal_title_text_padding_Right"/><attr format="dimension" name="tvpw_solo_modal_title_text_padding_bottom"/><attr format="color" name="tvpw_solo_modal_product_title_text_color"/><attr format="dimension" name="tvpw_solo_modal_product_title_text_size"/><attr format="string" name="tvpw_solo_modal_product_title_text_typeface"/><attr format="enum" name="tvpw_solo_modal_product_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_solo_modal_product_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_solo_close_icon_width"/><attr format="dimension" name="tvpw_solo_close_icon_height"/><attr format="color" name="tvpw_solo_close_icon_color"/><attr format="dimension" name="tvpw_solo_close_icon_padding"/><attr format="color" name="tvpw_solo_product_popup_background_color"/><attr format="color" name="tvpw_solo_product_popup_border_color"/><attr format="dimension" name="tvpw_solo_product_popup_border_width"/><attr format="dimension" name="tvpw_solo_product_popup_padding"/><attr format="dimension" name="tvpw_solo_product_popup_border_radius"/><attr format="enum" name="tvpw_solo_product_popup_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr><attr format="dimension" name="tvpw_solo_product_popup_width"/><attr format="color" name="tvpw_solo_product_popup_shadow_color"/><attr format="color" name="tvpw_solo_modal_product_price_text_color"/><attr format="dimension" name="tvpw_solo_modal_product_price_text_size"/><attr format="string" name="tvpw_solo_modal_product_price_text_typeface"/><attr format="enum" name="tvpw_solo_modal_product_price_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_solo_modal_product_price_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="color" name="tvpw_solo_modal_product_review_text_color"/><attr format="dimension" name="tvpw_solo_modal_product_review_text_size"/><attr format="string" name="tvpw_solo_modal_product_review_text_typeface"/><attr format="enum" name="tvpw_solo_modal_product_review_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_solo_modal_product_review_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="string" name="tvpw_solo_modal_product_cta_text"/><attr format="color" name="tvpw_solo_modal_product_cta_text_color"/><attr format="dimension" name="tvpw_solo_modal_product_cta_text_size"/><attr format="string" name="tvpw_solo_modal_product_cta_text_typeface"/><attr format="enum" name="tvpw_solo_modal_product_cta_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_solo_modal_product_cta_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="enum" name="tvpw_solo_modal_product_cta_text_transformation">
+            <enum name="UPPER_CASE" value="0"/>
+            <enum name="LOWER_CASE" value="1"/>
+        </attr><attr format="color" name="tvpw_solo_product_cta_background_color"/><attr format="color" name="tvpw_solo_product_cta_border_color"/><attr format="dimension" name="tvpw_solo_product_cta_border_width"/><attr format="dimension" name="tvpw_solo_product_cta_border_radius"/><attr format="color" name="tvpw_solo_product_img_border_color"/><attr format="dimension" name="tvpw_solo_product_img_border_width"/><attr format="dimension" name="tvpw_solo_product_img_border_size"/><attr format="color" name="tvpw_solo_item_play_button_background_color"/><attr format="dimension" name="tvpw_solo_item_play_button_background_radius"/><attr format="dimension" name="tvpw_solo_item_play_button_border_size"/><attr format="color" name="tvpw_solo_item_play_button_background_border_color"/><attr format="color" name="tvpw_solo_item_play_button_icon_color"/><attr format="boolean" name="tvpw_solo_video_auto_play"/><attr format="boolean" name="tvpw_solo_video_auto_next"/></declare-styleable><declare-styleable name="TvPageVideoWidgetCarousel"><attr format="color" name="tvpw_carousel_items_text_color"/><attr format="color" name="tvpw_carousel_items_text_background_color"/><attr format="enum" name="tvpw_carousel_items_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_carousel_items_text_size"/><attr format="dimension" name="tvpw_carousel_items_text_padding"/><attr format="enum" name="tvpw_carousel_items_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="string" name="tvpw_carousel_items_title_font_path"/><attr format="color" name="tvpw_carousel_item_play_button_background_color"/><attr format="dimension" name="tvpw_carousel_item_play_button_background_radius"/><attr format="dimension" name="tvpw_carousel_item_play_button_border_size"/><attr format="color" name="tvpw_carousel_item_play_button_background_border_color"/><attr format="color" name="tvpw_carousel_item_play_button_icon_color"/><attr format="color" name="tvpw_carousel_modal_background_color"/><attr format="color" name="tvpw_carousel_modal_shadow_color"/><attr format="color" name="tvpw_carousel_modal_border_color"/><attr format="dimension" name="tvpw_carousel_modal_border_width"/><attr format="dimension" name="tvpw_carousel_modal_body_padding"/><attr format="enum" name="tvpw_carousel_modal_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr><attr format="color" name="tvpw_carousel_modal_title_text_color"/><attr format="dimension" name="tvpw_carousel_modal_title_text_size"/><attr format="string" name="tvpw_carousel_modal_title_text_typeface"/><attr format="enum" name="tvpw_carousel_modal_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_carousel_modal_title_text_position">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_carousel_modal_title_text_padding_top"/><attr format="dimension" name="tvpw_carousel_modal_title_text_padding_Left"/><attr format="dimension" name="tvpw_carousel_modal_title_text_padding_Right"/><attr format="dimension" name="tvpw_carousel_modal_title_text_padding_bottom"/><attr format="color" name="tvpw_carousel_modal_product_title_text_color"/><attr format="dimension" name="tvpw_carousel_modal_product_title_text_size"/><attr format="string" name="tvpw_carousel_modal_product_title_text_typeface"/><attr format="enum" name="tvpw_carousel_modal_product_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_carousel_modal_product_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_carousel_close_icon_width"/><attr format="dimension" name="tvpw_carousel_close_icon_height"/><attr format="color" name="tvpw_carousel_close_icon_color"/><attr format="dimension" name="tvpw_carousel_close_icon_padding"/><attr format="color" name="tvpw_carousel_product_popup_background_color"/><attr format="color" name="tvpw_carousel_product_popup_border_color"/><attr format="dimension" name="tvpw_carousel_product_popup_border_width"/><attr format="dimension" name="tvpw_carousel_product_popup_padding"/><attr format="dimension" name="tvpw_carousel_product_popup_border_radius"/><attr format="enum" name="tvpw_carousel_product_popup_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr><attr format="dimension" name="tvpw_carousel_product_popup_width"/><attr format="color" name="tvpw_carousel_product_popup_shadow_color"/><attr format="color" name="tvpw_carousel_modal_product_price_text_color"/><attr format="dimension" name="tvpw_carousel_modal_product_price_text_size"/><attr format="string" name="tvpw_carousel_modal_product_price_text_typeface"/><attr format="enum" name="tvpw_carousel_modal_product_price_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_carousel_modal_product_price_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="color" name="tvpw_carousel_modal_product_review_text_color"/><attr format="dimension" name="tvpw_carousel_modal_product_review_text_size"/><attr format="string" name="tvpw_carousel_modal_product_review_text_typeface"/><attr format="enum" name="tvpw_carousel_modal_product_review_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_carousel_modal_product_review_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="string" name="tvpw_carousel_modal_product_cta_text"/><attr format="color" name="tvpw_carousel_modal_product_cta_text_color"/><attr format="dimension" name="tvpw_carousel_modal_product_cta_text_size"/><attr format="string" name="tvpw_carousel_modal_product_cta_text_typeface"/><attr format="enum" name="tvpw_carousel_modal_product_cta_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_carousel_modal_product_cta_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="enum" name="tvpw_carousel_modal_product_cta_text_transformation">
+            <enum name="UPPER_CASE" value="0"/>
+            <enum name="LOWER_CASE" value="1"/>
+        </attr><attr format="color" name="tvpw_carousel_product_cta_background_color"/><attr format="color" name="tvpw_carousel_product_cta_border_color"/><attr format="dimension" name="tvpw_carousel_product_cta_border_width"/><attr format="dimension" name="tvpw_carousel_product_cta_border_radius"/><attr format="color" name="tvpw_carousel_product_img_border_color"/><attr format="dimension" name="tvpw_carousel_product_img_border_width"/><attr format="dimension" name="tvpw_carousel_product_img_border_size"/><attr format="string" name="tvpw_carousel_video_title"/><attr format="color" name="tvpw_carousel_video_title_text_color"/><attr format="color" name="tvpw_carousel_video_title_text_background_color"/><attr format="enum" name="tvpw_carousel_video_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_carousel_video_title_text_size"/><attr format="dimension" name="tvpw_carousel_video_title_text_padding"/><attr format="enum" name="tvpw_carousel_video_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="string" name="tvpw_carousel_video_title_font_path"/><attr format="integer" name="tvpw_carousel_items_per_page"/><attr format="boolean" name="tvpw_carousel_video_auto_play"/><attr format="boolean" name="tvpw_carousel_video_auto_next"/></declare-styleable><declare-styleable name="TvPageVideoWidget"><attr format="string" name="tvpw_video_title"/><attr format="color" name="tvpw_video_title_text_color"/><attr format="color" name="tvpw_video_title_text_background_color"/><attr format="enum" name="tvpw_video_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_video_title_text_size"/><attr format="dimension" name="tvpw_video_title_text_padding"/><attr format="enum" name="tvpw_video_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="string" name="tvpw_video_title_font_path"/><attr format="color" name="tvpw_load_more_button_text_color"/><attr format="color" name="tvpw_load_more_button_background_color"/><attr format="dimension" name="tvpw_load_more_button_radius"/><attr format="color" name="tvpw_load_more_button_border_color"/><attr format="string" name="tvpw_load_more_button_text"/><attr format="dimension" name="tvpw_load_more_button_border_width"/><attr format="integer" name="tvpw_items_per_page"/><attr format="integer" name="tvpw_items_per_row"/><attr format="color" name="tvpw_items_text_color"/><attr format="color" name="tvpw_items_text_background_color"/><attr format="enum" name="tvpw_items_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_items_text_size"/><attr format="dimension" name="tvpw_items_text_padding"/><attr format="enum" name="tvpw_items_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="string" name="tvpw_items_title_font_path"/><attr format="color" name="tvpw_modal_background_color"/><attr format="color" name="tvpw_modal_shadow_color"/><attr format="color" name="tvpw_modal_border_color"/><attr format="dimension" name="tvpw_modal_border_width"/><attr format="dimension" name="tvpw_modal_body_padding"/><attr format="enum" name="tvpw_modal_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr><attr format="color" name="tvpw_modal_title_text_color"/><attr format="dimension" name="tvpw_modal_title_text_size"/><attr format="string" name="tvpw_modal_title_text_typeface"/><attr format="enum" name="tvpw_modal_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_modal_title_text_position">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_modal_title_text_padding_top"/><attr format="dimension" name="tvpw_modal_title_text_padding_Left"/><attr format="dimension" name="tvpw_modal_title_text_padding_Right"/><attr format="dimension" name="tvpw_modal_title_text_padding_bottom"/><attr format="color" name="tvpw_modal_product_title_text_color"/><attr format="dimension" name="tvpw_modal_product_title_text_size"/><attr format="string" name="tvpw_modal_product_title_text_typeface"/><attr format="enum" name="tvpw_modal_product_title_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_modal_product_title_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="dimension" name="tvpw_close_icon_width"/><attr format="dimension" name="tvpw_close_icon_height"/><attr format="color" name="tvpw_close_icon_color"/><attr format="dimension" name="tvpw_close_icon_padding"/><attr format="color" name="tvpw_product_popup_background_color"/><attr format="color" name="tvpw_product_popup_border_color"/><attr format="dimension" name="tvpw_product_popup_border_width"/><attr format="dimension" name="tvpw_product_popup_padding"/><attr format="dimension" name="tvpw_product_popup_border_radius"/><attr format="dimension" name="tvpw_product_popup_width"/><attr format="enum" name="tvpw_product_popup_shadow_visibility">
+            <enum name="VISIBLE" value="1"/>
+            <enum name="GONE" value="0"/>
+        </attr><attr format="color" name="tvpw_product_popup_shadow_color"/><attr format="color" name="tvpw_modal_product_price_text_color"/><attr format="dimension" name="tvpw_modal_product_price_text_size"/><attr format="string" name="tvpw_modal_product_price_text_typeface"/><attr format="enum" name="tvpw_modal_product_price_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_modal_product_price_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="color" name="tvpw_modal_product_review_text_color"/><attr format="dimension" name="tvpw_modal_product_review_text_size"/><attr format="string" name="tvpw_modal_product_review_text_typeface"/><attr format="enum" name="tvpw_modal_product_review_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_modal_product_review_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="string" name="tvpw_modal_product_cta_text"/><attr format="color" name="tvpw_modal_product_cta_text_color"/><attr format="dimension" name="tvpw_modal_product_cta_text_size"/><attr format="string" name="tvpw_modal_product_cta_text_typeface"/><attr format="enum" name="tvpw_modal_product_cta_text_style">
+            <enum name="BOLD" value="0"/>
+            <enum name="NORMAL" value="1"/>
+            <enum name="ITALIC" value="2"/>
+        </attr><attr format="enum" name="tvpw_modal_product_cta_text_gravity">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="LEFT" value="2"/>
+            <enum name="RIGHT" value="3"/>
+            <enum name="BOTTOM" value="4"/>
+        </attr><attr format="enum" name="tvpw_modal_product_cta_text_transformation">
+            <enum name="UPPER_CASE" value="0"/>
+            <enum name="LOWER_CASE" value="1"/>
+        </attr><attr format="color" name="tvpw_product_cta_background_color"/><attr format="color" name="tvpw_product_cta_border_color"/><attr format="dimension" name="tvpw_product_cta_border_width"/><attr format="dimension" name="tvpw_product_cta_border_radius"/><attr format="color" name="tvpw_product_img_border_color"/><attr format="dimension" name="tvpw_product_img_border_width"/><attr format="dimension" name="tvpw_product_img_border_size"/><attr format="color" name="tvpw_item_play_button_background_color"/><attr format="dimension" name="tvpw_item_play_button_background_radius"/><attr format="dimension" name="tvpw_item_play_button_border_size"/><attr format="color" name="tvpw_item_play_button_background_border_color"/><attr format="color" name="tvpw_item_play_button_icon_color"/><attr format="boolean" name="tvpw_video_auto_play"/><attr format="boolean" name="tvpw_video_auto_next"/></declare-styleable></configuration></mergedItems></merger>

@@ -1,0 +1,79 @@
+apply plugin: 'com.android.library'
+//apply from: "D:/Ronak_studio/Ronak_workspace/tvpage-sdk-phase2-android/Source/TvPageApp2/tvpage-library/coverage.gradle"
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled true //we use "debug" build type for test coverage (can be other)
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    //compile 'cz.msebera.android:httpclient:4.4.1.1'
+    compile 'com.github.HaarigerHarald:android-youtubeExtractor:v1.6.0'
+    //compile 'com.writingminds:FFmpegAndroid:0.3.2'
+    compile 'com.github.ed-george:AndroidVimeoExtractor:v1.1.1'
+    //Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //Glide transformation
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    //compile 'com.android.support:design:25.0.1'
+
+    compile 'com.minimize.library:seekbar-compat:0.2.5'
+
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+
+    compile('com.devbrackets.android:exomedia:4.0.3') {
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    compile 'me.zhanghai.android.materialratingbar:library:1.0.2'
+
+    compile 'com.google.code.gson:gson:2.2.4'
+
+    //custom font
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    /*compile 'com.devbrackets.android:exomedia:4.0.0-preview4'*/
+    //compile 'com.devbrackets.android:exomedia:4.0.0'
+
+    compile 'com.google.code.gson:gson:2.2.4'
+    //card view
+    compile 'com.android.support:cardview-v7:26.1.0'
+
+
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:runner:' + rootProject.runnerVersion;
+    androidTestCompile 'com.android.support.test:rules:' + rootProject.rulesVersion;
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:' + rootProject.espressoVersion;
+
+    // Unit testing
+//    testCompile "org.robolectric:robolectric:3.0-rc3"
+//    testCompile "junit:junit:4.12"
+//    testCompile "org.assertj:assertj-core:1.7.0"
+
+
+}
+

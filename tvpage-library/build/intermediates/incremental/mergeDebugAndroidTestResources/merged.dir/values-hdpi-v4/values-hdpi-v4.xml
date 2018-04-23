@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_latest_video_item_width">260dp</dimen>
+    <dimen name="img_gallery_channel_top_height">150dp</dimen>
+    <dimen name="product_height">120dp</dimen>
+    <dimen name="product_image_width">100dp</dimen>
+    <dimen name="product_width">300dp</dimen>
+    <dimen name="str_latest_video_text_size">24sp</dimen>
+    <dimen name="str_load_more_text_size">18sp</dimen>
+    <dimen name="videoview_height">220dp</dimen>
+    <dimen name="videoview_home_row_height">160dp</dimen>
+    <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
+          <item name="barLength">18.66dp</item>
+          <item name="gapBetweenBars">3.33dp</item>
+          <item name="drawableSize">24dp</item>
+     </style>
+</resources>
