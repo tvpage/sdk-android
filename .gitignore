@@ -3,6 +3,5 @@
 app
 build
 local.properties
-sdk-android.iml
-tvpage-library
 **/.DS_Store
+tvpage-library/build
