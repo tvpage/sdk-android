@@ -11,3 +11,9 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    def gitCommitCount = "git rev-list HEAD --count".execute().text.trim().toBigInteger()
+    project.ext.set("versionCode", gitCommitCount)
+    project.ext.set("gitCommitCount", gitCommitCount)
+}
