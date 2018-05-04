@@ -1,0 +1,7 @@
+.gradle
+.idea
+app
+build
+local.properties
+**/.DS_Store
+tvpage-library/build
