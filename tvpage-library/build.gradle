@@ -20,6 +20,9 @@ android {
             versionNameSuffix = ".${rootProject.ext.gitCommitCount}-Snapshot"
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 
 }
 
@@ -44,6 +47,7 @@ dependencies {
     api 'com.minimize.library:seekbar-compat:0.2.5'
     api 'com.android.support:recyclerview-v7:25.3.1'
     api 'com.devbrackets.android:exomedia:4.0.0-preview4'
+    testImplementation 'junit:junit:4.12'
 }
 
 afterEvaluate {
