@@ -1,3 +1,1 @@
-include ':tvpage-library'
-
-
+include ':app', ':tvpage-library'

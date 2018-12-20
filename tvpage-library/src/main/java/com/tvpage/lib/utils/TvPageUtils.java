@@ -6,12 +6,16 @@ import android.support.v4.content.ContextCompat;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.RequestOptions;
 import com.tvpage.lib.R;
 
 
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
+
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
 
 /**
  * Created by MTPC-110 on 3/8/2017.
@@ -117,26 +121,40 @@ public class TvPageUtils {
     }
 
 
-
-     public static void sout(String object) {
-       // System.out.println("" + object);
+    public static void sout(String object) {
+        // System.out.println("" + object);
     }
 
     public static void loadImageUsingGlide(Context context, String image, ImageView imageView) {
         try {
+
+            RequestOptions options = new RequestOptions();
+            options.placeholder(R.drawable.placeholder);
+            options.error(R.drawable.placeholder);
+            options.fitCenter();
+            options.dontAnimate();
+            DrawableTransitionOptions drawableTransitionOptions = imageView.getDrawable() == null ?
+                    withCrossFade() : withCrossFade().dontTransition();
+
+
             Glide.with(context).
+                    setDefaultRequestOptions(options).
+                    load(image).
+                    transition(drawableTransitionOptions).
+                    into(imageView);
+
+          /*  Glide.with(context).
                     load(image).
                     crossFade().
                     placeholder(R.drawable.bg_black)
                     .error(R.drawable.bg_black)
                     .fitCenter()
                     .dontAnimate()
-                    .into(imageView);
+                    .into(imageView);*/
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 
 
     public static OkHttpClient getOkHttpClient() {
@@ -157,6 +175,4 @@ public class TvPageUtils {
             return context.getResources().getColor(id);
         }
     }
-
-
 }

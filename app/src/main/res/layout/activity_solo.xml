@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <fragment
+        android:id="@+id/tvPageSoloView"
+        android:name="com.tvpage.lib.view.TvPageSoloWidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</RelativeLayout>
+
+
+    <!--ITEMS TEXT STYLE START-->
+
+    <!--app:tvpw_solo_items_text_background_color="@color/price_text_color"-->
+    <!--app:tvpw_solo_items_text_color="@color/colorAccent"-->
+    <!--app:tvpw_solo_items_title_font_path="fonts/Dosis-Bold.ttf"-->
+    <!--app:tvpw_solo_items_text_style="BOLD"-->
+    <!--app:tvpw_solo_items_text_padding="0dp"-->
+    <!--app:tvpw_solo_items_text_size="5sp"-->
+    <!--app:tvpw_solo_items_text_gravity="LEFT"-->
+
+    <!--ITEMS TEXT STYLE END-->
+
+    <!-- Modal Background Style START -->
+
+    <!--app:tvpw_solo_modal_background_color="@color/gray"-->
+    <!--app:tvpw_solo_modal_body_padding="15dp"-->
+    <!--app:tvpw_solo_modal_border_color="@color/black"-->
+    <!--app:tvpw_solo_modal_border_width="1dp"-->
+    <!--app:tvpw_solo_modal_shadow_color="@color/price_text_color"-->
+    <!--app:tvpw_solo_modal_shadow_visibility="VISIBLE"-->
+
+    <!-- Modal Background Style END -->
+
+    <!-- Modal Title Text Style START -->
+
+    <!--app:tvpw_solo_modal_title_text_color="@color/black"-->
+    <!--app:tvpw_solo_modal_title_text_padding_Left="10dp"-->
+    <!--app:tvpw_solo_modal_title_text_padding_Right="20dp"-->
+    <!--app:tvpw_solo_modal_title_text_padding_bottom="30dp"-->
+    <!--app:tvpw_solo_modal_title_text_padding_top="35dp"-->
+    <!--app:tvpw_solo_modal_title_text_position="CENTER"-->
+    <!--app:tvpw_solo_modal_title_text_size="3sp"-->
+    <!--app:tvpw_solo_modal_title_text_style="NORMAL"-->
+    <!--app:tvpw_solo_modal_title_text_typeface="fonts/Dosis-Bold.ttf"-->
+
+    <!-- Modal Title Text Style END -->
+
+    <!--Modal Product Title Text Style START-->
+
+    <!--app:tvpw_solo_modal_product_title_text_color="@color/gray"-->
+    <!--app:tvpw_solo_modal_product_title_text_gravity="RIGHT"-->
+    <!--app:tvpw_solo_modal_product_title_text_size="12sp"-->
+    <!--app:tvpw_solo_modal_product_title_text_style="ITALIC"-->
+    <!--app:tvpw_solo_modal_product_title_text_typeface="fonts/Dosis-Bold.ttf"-->
+
+    <!--Modal Product Title Text Style END-->
+
+    <!--Modal Close Style START-->
+
+    <!--app:tvpw_solo_close_icon_color="@color/colorPrimary"-->
+    <!--app:tvpw_solo_close_icon_height="@dimen/common_10_dp"-->
+    <!--app:tvpw_solo_close_icon_padding="@dimen/common_10_dp"-->
+    <!--app:tvpw_solo_close_icon_width="@dimen/common_10_dp"-->
+
+    <!--Modal Close Style END-->
+
+    <!--Modal Popup Background START-->
+
+    <!--app:tvpw_solo_product_popup_background_color="@color/gray"-->
+    <!--app:tvpw_solo_product_popup_border_color="@color/colorPrimary"-->
+    <!--app:tvpw_solo_product_popup_border_width="@dimen/common_10_dp"-->
+    <!--app:tvpw_solo_product_popup_padding="@dimen/common_5_dp"-->
+    <!--app:tvpw_solo_product_popup_border_radius="15dp"-->
+    <!--app:tvpw_solo_product_popup_shadow_visibility="VISIBLE"-->
+    <!--app:tvpw_solo_product_popup_shadow_color="@color/black"-->
+    <!--app:tvpw_solo_product_popup_width="350px"-->
+
+    <!--Modal Popup Background END-->
+
+    <!--Modal Product Price  END-->
+
+    <!--app:tvpw_solo_modal_product_price_text_color="@color/colorAccent"-->
+    <!--app:tvpw_solo_modal_product_price_text_gravity="RIGHT"-->
+    <!--app:tvpw_solo_modal_product_price_text_size="4sp"-->
+    <!--app:tvpw_solo_modal_product_price_text_style="ITALIC"-->
+    <!--app:tvpw_solo_modal_product_price_text_typeface="fonts/Dosis-Bold.ttf"-->
+
+    <!--ModalProduct Price  END-->
+
+    <!--ModalProduct Review  START-->
+
+    <!--app:tvpw_solo_modal_product_review_text_color="@color/colorAccent"-->
+    <!--app:tvpw_solo_modal_product_review_text_gravity="RIGHT"-->
+    <!--app:tvpw_solo_modal_product_review_text_size="2sp"-->
+    <!--app:tvpw_solo_modal_product_review_text_style="ITALIC"-->
+    <!--app:tvpw_solo_modal_product_review_text_typeface="fonts/Dosis-Bold.ttf"-->
+
+    <!--ModalProduct Review  END-->
+
+    <!--ModalProduct CTA Text  START-->
+
+    <!--app:tvpw_solo_modal_product_cta_text="132"-->
+    <!--app:tvpw_solo_modal_product_cta_text_color="@color/transperant_black"-->
+    <!--app:tvpw_solo_modal_product_cta_text_gravity="RIGHT"-->
+    <!--app:tvpw_solo_modal_product_cta_text_size="9sp"-->
+    <!--app:tvpw_solo_modal_product_cta_text_style="ITALIC"-->
+    <!--app:tvpw_solo_modal_product_cta_text_transformation="UPPER_CASE"-->
+    <!--app:tvpw_solo_modal_product_cta_text_typeface="fonts/Dosis-Bold.ttf"-->
+
+    <!--ModalProduct CTA Text  END-->
+
+    <!--Modal CTA Background START-->
+
+    <!--app:tvpw_solo_product_cta_background_color="@color/colorAccent"-->
+    <!--app:tvpw_solo_product_cta_border_color="@color/gray"-->
+    <!--app:tvpw_solo_product_cta_border_radius="@dimen/common_5_dp"-->
+    <!--app:tvpw_solo_product_cta_border_width="@dimen/common_5_dp"-->
+
+    <!--Modal CTA Background END-->
+
+
+    <!--Item Image Play Button Style Start-->
+
+    <!--app:tvpw_solo_item_play_button_background_color="@color/gray"-->
+    <!--app:tvpw_solo_item_play_button_background_radius="30dp"-->
+    <!--app:tvpw_solo_item_play_button_border_size="10px"-->
+    <!--app:tvpw_solo_item_play_button_background_border_color="@color/red"-->
+    <!--app:tvpw_solo_item_play_button_icon_color="@color/black"-->
+
+    <!--Item Image Play Button Style End-->
+
+    <!--Video Options Start-->
+
+    <!--app:tvpw_solo_video_auto_next="true"-->
+    <!--app:tvpw_solo_video_auto_play="false"-->
+
+    <!--Video Options End-->

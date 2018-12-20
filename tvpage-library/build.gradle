@@ -1,145 +1,81 @@
 apply plugin: 'com.android.library'
+//apply from: "D:/Ronak_studio/Ronak_workspace/tvpage-sdk-phase2-android/Source/TvPageApp2/tvpage-library/coverage.gradle"
 
 android {
-    compileSdkVersion 25
-
+    compileSdkVersion 27
+//    buildToolsVersion '27.0.3'
     defaultConfig {
-        //applicationId = "com.tvpage.lib.tvpage-lib"
+
         minSdkVersion 17
-        targetSdkVersion 25
-        //versionCode rootProject.ext.gitCommitCount
+        targetSdkVersion 27
+        versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            testCoverageEnabled true //we use "debug" build type for test coverage (can be other)
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            versionNameSuffix = ".${rootProject.ext.gitCommitCount}"
-        }
-        debug {
-            versionNameSuffix = ".${rootProject.ext.gitCommitCount}-Snapshot"
         }
     }
-    lintOptions {
-        abortOnError false
-    }
 
-}
 
-repositories {
-    maven { url "https://jitpack.io" }
-    mavenCentral()
-    jcenter()
-    google()
 }
 
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
-    api 'com.android.support:appcompat-v7:25.3.1'
-    api 'com.github.HaarigerHarald:android-youtubeExtractor:v1.7.0'
-    api 'com.github.ed-george:AndroidVimeoExtractor:1.1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    //card view
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    //compile 'cz.msebera.android:httpclient:4.4.1.1'
+    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:v1.6.0'
+    //compile 'com.writingminds:FFmpegAndroid:0.3.2'
+    implementation 'com.github.ed-george:AndroidVimeoExtractor:v1.1.1'
     //Glide
-    api 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
     //Glide transformation
-    api 'jp.wasabeef:glide-transformations:2.0.1'
-    api 'com.squareup.okhttp3:okhttp:3.6.0'
-    api 'com.squareup.okhttp3:logging-interceptor:3.6.0'
-    api 'com.minimize.library:seekbar-compat:0.2.5'
-    api 'com.android.support:recyclerview-v7:25.3.1'
-    api 'com.devbrackets.android:exomedia:4.0.0-preview4'
-    testImplementation 'junit:junit:4.12'
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    //compile 'com.android.support:design:25.0.1'
+
+    implementation 'com.minimize.library:seekbar-compat:0.2.5'
+
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    api('com.devbrackets.android:exomedia:4.1.0') {
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    implementation 'me.zhanghai.android.materialratingbar:library:1.2.0'
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    //custom font
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    /*compile 'com.devbrackets.android:exomedia:4.0.0-preview4'*/
+    //compile 'com.devbrackets.android:exomedia:4.0.0'
+
+
+
+
+
+
+
+
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:' + rootProject.runnerVersion;
+    androidTestImplementation 'com.android.support.test:rules:' + rootProject.rulesVersion;
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:' + rootProject.espressoVersion;
+
+    // Unit testing
+//    testCompile "org.robolectric:robolectric:3.0-rc3"
+//    testCompile "junit:junit:4.12"
+//    testCompile "org.assertj:assertj-core:1.7.0"
 }
 
-afterEvaluate {
-    apply plugin: 'maven-publish'
-
-    task androidJavadocs(type: Javadoc) {
-        source = android.sourceSets.main.java.srcDirs
-        //classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-        android.libraryVariants.all { variant ->
-            //if (variant.name == 'release') {
-                owner.classpath += variant.javaCompiler.classpath
-            //}
-        }
-        //options('bootclasspath')
-        //bootClasspath = files(android.getBootClasspath()).asType(List)
-        //destinationDir = file("../javadoc/")
-        //exclude '**/R.html', '**/R.*.html', '**/R.java'
-        //classpath = files(javaCompiler.classpath.files) + getAndroidPrebuilt(android.compileSdkVersion)
-        destinationDir = file("../javadoc/")
-        options.encoding = "UTF-8"
-        options.addStringOption('bootclasspath', android.getBootClasspath().join(File.pathSeparator))
-
-        exclude '**/BuildConfig.java'
-        exclude '**/R.java'
-    }
-
-    task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
-        classifier = 'javadoc'
-        from androidJavadocs.destinationDir
-    }
-
-    task androidSourcesJar(type: Jar) {
-        classifier = 'sources'
-        from android.sourceSets.main.java.srcDirs
-    }
-
-    publishing {
-        publications {
-            mavenAar(MavenPublication) {
-                groupId 'com.tvpage.lib'
-                artifactId 'tvpage-library'
-                version = "${android.defaultConfig.versionName}.${rootProject.ext.gitCommitCount}"
-
-                artifact bundleRelease
-                artifact androidJavadocsJar
-                artifact androidSourcesJar
-
-                pom.withXml {
-                    asNode().appendNode('description', 'Android SDK library for integration of TVPage experience into android applications')
-                    //description = gradleProject.description
-                    asNode().appendNode('url', 'https://github.com/tvpage/sdk-android')
-
-                    final dependenciesNode = asNode().appendNode('dependencies')
-
-                    ext.addDependency = { Dependency dep, String scope ->
-                        if (dep.group == null || dep.version == null || dep.name == null || dep.name == "unspecified")
-                            return // ignore invalid dependencies
-
-                        final dependencyNode = dependenciesNode.appendNode('dependency')
-                        dependencyNode.appendNode('groupId', dep.group)
-                        dependencyNode.appendNode('artifactId', dep.name)
-                        dependencyNode.appendNode('version', dep.version)
-                        dependencyNode.appendNode('scope', scope)
-
-                        if (!dep.transitive) {
-                            // If this dependency is transitive, we should force exclude all its dependencies them from the POM
-                            final exclusionNode = dependencyNode.appendNode('exclusions').appendNode('exclusion')
-                            exclusionNode.appendNode('groupId', '*')
-                            exclusionNode.appendNode('artifactId', '*')
-                        } else if (!dep.properties.excludeRules.empty) {
-                            // Otherwise add specified exclude rules
-                            final exclusionNode = dependencyNode.appendNode('exclusions').appendNode('exclusion')
-                            dep.properties.excludeRules.each { ExcludeRule rule ->
-                                exclusionNode.appendNode('groupId', rule.group ?: '*')
-                                exclusionNode.appendNode('artifactId', rule.module ?: '*')
-                            }
-                        }
-                    }
-
-                    // List all "compile" dependencies (for old Gradle)
-                    configurations.compile.getAllDependencies().each { dep -> addDependency(dep, "compile") }
-                    // List all "api" dependencies (for new Gradle) as "compile" dependencies
-                    configurations.api.getAllDependencies().each { dep -> addDependency(dep, "compile") }
-                    // List all "implementation" dependencies (for new Gradle) as "runtime" dependencies
-                    configurations.implementation.getAllDependencies().each { dep -> addDependency(dep, "runtime") }
-                }
-            }
-        }
-        repositories {
-            maven {
-                url "$buildDir/repo"
-            }
-        }
-    }
-}

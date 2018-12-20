@@ -23,7 +23,7 @@ public class ZoomableRelativeLayout extends RelativeLayout {
     public ZoomableRelativeLayout(Context context, AttributeSet attrs,
                                   int defStyle) {
         super(context, attrs, defStyle);
-        // TODO Auto-generated constructor stub
+        //  Auto-generated constructor stub
     }
 
     protected void dispatchDraw(Canvas canvas) {

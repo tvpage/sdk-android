@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+
+    <Button
+        android:id="@+id/btnSideBarWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="openSideBarWidget"
+        android:text="SIDE BAR WIDGET" />
+
+
+    <Button
+        android:id="@+id/btnCarouselWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSideBarWidget"
+        android:layout_marginTop="50dp"
+        android:onClick="openCarouselWidget"
+        android:text="Carousel WIDGET" />
+
+
+    <Button
+        android:id="@+id/btnSoloWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCarouselWidget"
+        android:layout_marginTop="50dp"
+        android:onClick="openSoloWidget"
+        android:text="SOLO WIDGET" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSoloWidget"
+        android:layout_marginTop="50dp"
+        android:onClick="openGalleryWidget"
+        android:text="GALLERY WIDGET" />
+
+</RelativeLayout>

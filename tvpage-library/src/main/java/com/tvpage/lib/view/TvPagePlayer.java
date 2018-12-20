@@ -17,6 +17,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.provider.Settings;
 import android.support.annotation.IntRange;
 import android.support.annotation.RequiresApi;
@@ -50,6 +52,7 @@ import com.tvpage.lib.FullScreenVideoPlayerActivity;
 import com.tvpage.lib.R;
 import com.tvpage.lib.api_listeners.OnTvPageResponseApiListener;
 import com.tvpage.lib.model.TvPageResponseModel;
+import com.tvpage.lib.utils.CommonUtils;
 import com.tvpage.lib.utils.SpinnerAdapterQuality;
 import com.tvpage.lib.utils.TvPageException;
 import com.tvpage.lib.utils.TvPageInstance;
@@ -92,20 +95,8 @@ import static com.tvpage.lib.utils.TvPageUtils.VIMEO_VIDEO_TYPE;
 import static com.tvpage.lib.utils.TvPageUtils.YOUTUBE_VIDEO_TYPE;
 import static com.tvpage.lib.utils.TvPageUtils.getOkHttpClient;
 
-/*import com.devbrackets.android.exomedia.core.EMListenerMux;
-import com.devbrackets.android.exomedia.core.exoplayer.EMExoPlayer;
-import com.devbrackets.android.exomedia.core.listener.Id3MetadataListener;
-import com.devbrackets.android.exomedia.core.listener.InfoListener;
-import com.devbrackets.android.exomedia.listener.OnBufferUpdateListener;
-import com.devbrackets.android.exomedia.listener.OnCompletionListener;
-import com.devbrackets.android.exomedia.listener.OnErrorListener;
-import com.devbrackets.android.exomedia.listener.OnPreparedListener;
-import com.devbrackets.android.exomedia.ui.widget.EMVideoView;
-
-import com.google.android.exoplayer.metadata.id3.Id3Frame;*/
 
 /**
- * Created by MTPC-110 on 3/9/2017.
  */
 public class TvPagePlayer extends RelativeLayout implements View.OnClickListener, OnCompletionListener,
         OnPreparedListener, MediaPlayer.OnInfoListener
@@ -160,15 +151,38 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
     /**
      * The M handler.
      */
-    Handler mHandler = new Handler();
+    Handler mHandler = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message message) {
+            // This is where you do your work in the UI thread.
+            // Your worker tells you in the message what to do.
+        }
+    };
+
+
     /**
      * The M handler three second once.
      */
-    Handler mHandlerThreeSecondOnce = new Handler();
+    Handler mHandlerThreeSecondOnce = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message message) {
+            // This is where you do your work in the UI thread.
+            // Your worker tells you in the message what to do.
+        }
+    };
+
+
     /**
      * The M handler three second repeat.
      */
-    Handler mHandlerThreeSecondRepeat = new Handler();
+    Handler mHandlerThreeSecondRepeat = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message message) {
+            // This is where you do your work in the UI thread.
+            // Your worker tells you in the message what to do.
+        }
+    };
+
 
     //private ProgressDialog progressDialog;
 
@@ -199,7 +213,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
 
     private int qualityLevelCurrent = 0;
     // Root view's LayoutParams
-    private RelativeLayout.LayoutParams mRootParam;
+    private LayoutParams mRootParam;
 
     /**
      * The constant VIDEO_UNSTARTED.
@@ -914,7 +928,6 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
             if (e.getCause().getMessage().contains("403")) {
                 // Log.e("OnError", urlToPlayDesiredQuality);
 
-                /*for 144px error*/
                 videoView.setOnPreparedListener(null);
                 videoView.setOnPreparedListener(this);
 
@@ -926,6 +939,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
                         recyclerQuality.findViewHolderForAdapterPosition(3).itemView.performClick();
                     }
                 }
+                // onSaveInstance();
                 onRestoreInstance();
             }
         }
@@ -1333,9 +1347,16 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
                 if (position == mData.size() - 1) {
                     // load more data here.last data has loaded
                     //do perform click of recyclerview
-                    if (recyclerQuality.findViewHolderForAdapterPosition(0) != null) {
-                        recyclerQuality.findViewHolderForAdapterPosition(0).itemView.performClick();
-                    }
+                    Handler mHandler = new Handler();
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (recyclerQuality.findViewHolderForAdapterPosition(0) != null) {
+                                recyclerQuality.findViewHolderForAdapterPosition(0).itemView.performClick();
+                            }
+                        }
+                    }, 500);
+
                 }
             }
 
@@ -1732,7 +1753,6 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
                         } else {
 
                         }
-
                         if (!jsonObjectAsset.isNull("sources")) {
 
                             JSONArray jsonArray1 = jsonObjectAsset.getJSONArray("sources");
@@ -2448,11 +2468,13 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         SharedPreferences prefs = mContext.getSharedPreferences("tvpage_pref", Context.MODE_PRIVATE);
         position = prefs.getInt("video_position", 0);
         urlToPlayDesiredQuality = prefs.getString("video_url", "");
+        Log.d("On Restore Video", "On Restore Video" + urlToPlayDesiredQuality);
         isVideoCompleted = prefs.getBoolean("video_completed", false);
         isMuted = prefs.getBoolean("video_mute", false);
         state = prefs.getString("video_state", "");
         volume_video = prefs.getInt("video_volume", 0);
         setVideosOnRestore();
+
 
     }
 
@@ -2489,6 +2511,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
 
             videoView.requestFocus();
             videoView.start();
+
             //video playing listener
             if (onVideoPlaying != null) {
                 onVideoPlaying.OnVideoPlaying(true);
@@ -2510,7 +2533,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
     public void pause() {
         if (videoView != null && videoView.isPlaying()) {
 
-            //remove call backs on pause..of repat handler
+            //remove call backs on pause..of repeat handler
             mHandlerThreeSecondRepeat.removeCallbacks(runnableThreeSecondRepeat);
 
 
@@ -2922,7 +2945,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
      */
     public void resize(int width, int height) {
         if (relativesParent != null && width > 0 && height > 0) {
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(width, height);
+            LayoutParams layoutParams = new LayoutParams(width, height);
             layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
             relativesParent.setLayoutParams(layoutParams);
         }
@@ -3243,10 +3266,9 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         //videoView.stopPlayback();
         mHandlerThreeSecondRepeat.removeCallbacks(runnableThreeSecondRepeat);
 
-        Log.d("Media Completed", "Media Completed");
     }
 
-    private void clearPrefOfVideoAndPostion() {
+    protected void clearPrefOfVideoAndPostion() {
         //clear pref
         SharedPreferences settings = mContext.getSharedPreferences("tvpage_pref", Context.MODE_PRIVATE);
         //settings.edit().clear().commit();
@@ -3254,7 +3276,17 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         SharedPreferences.Editor editor = settings.edit();
         editor.remove("video_position");
         editor.apply();
+    }
 
+    protected void clearPrefOfVideoUrlsAndVideoPostion() {
+        //clear pref
+        SharedPreferences settings = mContext.getSharedPreferences("tvpage_pref", Context.MODE_PRIVATE);
+        //settings.edit().clear().commit();
+
+        SharedPreferences.Editor editor = settings.edit();
+        editor.remove("video_position");
+        editor.remove("video_url");
+        editor.apply();
     }
 
     @Override
@@ -3369,10 +3401,12 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         if (isCueVideoFlag) {
             //reset cue video flag
             isCueVideoFlag = false;
+            pause();
 
+            if (videoView != null)
 
-            //hide progress media controller as in cue video does not start automatically
-            hideProgressBarOfMediaController();
+                //hide progress media controller as in cue video does not start automatically
+                hideProgressBarOfMediaController();
 
             //register cue video listener callback
             if (onVideoCued != null) {
@@ -3573,7 +3607,13 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
             // videoView.setMediaController(null);
             //set the uri of the video to be played
             //videoView.setVideoPath(urlToPlayDesiredQuality);
-            videoView.setVideoURI(Uri.parse(urlToPlayDesiredQuality));
+            /*if(!CommonUtils.isValidString(urlToPlayDesiredQuality)){
+                return;
+            }*/
+            if (CommonUtils.isValidString(urlToPlayDesiredQuality)) {
+                videoView.setVideoURI(Uri.parse(urlToPlayDesiredQuality));
+            }
+
         } catch (Exception e) {
             Log.e("Error", e.getMessage());
             e.printStackTrace();
@@ -3610,7 +3650,7 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         if (listOfQuality.size() > 0) {
             //just notify adapter
             //pass last param bollean as true....
-            qualityAdapter = new QualityAdapter(mContext, listOfQuality, qualityLevelCurrent, true);
+            qualityAdapter = new QualityAdapter(mContext, listOfQuality, qualityLevelCurrent, false);
             if (qualityAdapter != null && recyclerQuality != null) {
                 recyclerQuality.setAdapter(qualityAdapter);
                 qualityAdapter.notifyDataSetChanged();
@@ -5453,6 +5493,8 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         }
 
 
+        Log.d("ABC", "tvPageChannelsVideosExtractor: " + urlToPass);
+
         //call api
         //https://app.tvpage.com/api/channels/87486517/videos?X-login-id=1758929
         new GetChannelVideos(urlToPass
@@ -5512,13 +5554,24 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
                         //start woith html
                         onTvPageResponseApiListener.onSuccess(tvPageResponseModel);
                     }
+                } else {
+                    //Throws an exception as a error call back to prevent progress Dialog visibility
+                    if (onTvPageResponseApiListener != null) {
+                        onTvPageResponseApiListener.onFailure(new Throwable("Error"));
+                        //call back of onerror occurs
+                        if (onError != null) {
+                            onError.OnError();
+                        }
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();
-                onTvPageResponseApiListener.onFailure(e);
-                //call back of onerror occurs
-                if (onError != null) {
-                    onError.OnError();
+                if (onTvPageResponseApiListener != null) {
+                    onTvPageResponseApiListener.onFailure(e);
+                    //call back of onerror occurs
+                    if (onError != null) {
+                        onError.OnError();
+                    }
                 }
             }
 
@@ -6152,5 +6205,12 @@ public class TvPagePlayer extends RelativeLayout implements View.OnClickListener
         } else {
             return context.getResources().getColor(id);
         }
+    }
+
+    public void onResetPlayer() {
+        clearPrefOfVideoAndPostion();
+        clearPrefOfVideoUrlsAndVideoPostion();
+        videoView.reset();
+        invalidate();
     }
 }

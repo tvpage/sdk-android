@@ -2,4 +2,100 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="common_10_dp">10dp</dimen>
+    <dimen name="common_1_dp">1dp</dimen>
+    <dimen name="str_latest_video_text_size">24sp</dimen>
+    <dimen name="str_load_more_text_size">18sp</dimen>
+    <dimen name="common_5_dp">5dp</dimen>
+    <dimen name="common_35_dp">35dp</dimen>
+    <dimen name="common_30_dp">30dp</dimen>
+    <dimen name="common_15_dp">15dp</dimen>
+    <dimen name="common_20_dp">20dp</dimen>
+    <dimen name="common_25_dp">25dp</dimen>
+
+
+    <dimen name="common_text_10_sp">10sp</dimen>
+    <dimen name="common_text_12_sp">12sp</dimen>
+    <dimen name="common_text_14_sp">14sp</dimen>
+    <dimen name="common_text_16_sp">16sp</dimen>
+
+    <dimen name="product_height">120dp</dimen>
+    <dimen name="product_image_width">100dp</dimen>
+    <dimen name="product_width">300dp</dimen>
+
+    <!--Video Title Default Dimens Start-->
+    <dimen name="default_video_title_padding">0dp</dimen>
+    <dimen name="default_video_title_text_size">18px</dimen>
+    <!--Video Title Default Dimens End-->
+
+    <!--Load More Default Dimens Start-->
+    <dimen name="default_load_more_radius">0dp</dimen>
+    <dimen name="default_load_more_border_width">1px</dimen>
+    <!--Load More Default Dimens End-->
+
+    <!--Video Title Default Dimens Start-->
+    <dimen name="default_items_title_padding">0dp</dimen>
+    <dimen name="default_items_title_text_size">12px</dimen>
+    <!--Video Title Default Dimens End-->
+
+    <!--Modal Title Default Dimens Start-->
+    <dimen name="default_modal_title_padding_top">25px</dimen>
+    <dimen name="default_modal_title_padding_right_left">15px</dimen>
+    <dimen name="default_modal_title_padding_right">5px</dimen>
+    <dimen name="default_modal_title_text_size">16px</dimen>
+
+    <!--Modal Title Default Dimens End-->
+    <dimen name="common_0_dp">0dp</dimen>
+
+    <!--Modal Product Title Style Start -->
+    <dimen name="default_modal_product_title_size">14px</dimen>
+
+    <!--Modal Product Title Style End -->
+
+    <!--Modal Close Icon Style Start-->
+
+    <dimen name="default_modal_close_icon_width_height">27px</dimen>
+    <dimen name="default_modal_close_icon_padding">3px</dimen>
+
+    <!--Modal Close Icon Style End-->
+
+
+    <!--Product Popup Style Start-->
+
+    <dimen name="default_product_popup_border_width">1px</dimen>
+    <dimen name="default_product_popup_border_padding">10px</dimen>
+    <!--<dimen name="default_product_popup_width">235px</dimen>-->
+    <dimen name="default_product_popup_width">280dp</dimen>
+    <!--Product Popup  Style End-->
+
+    <!--Modal Product Price Style Start -->
+    <dimen name="default_modal_product_price_size">16px</dimen>
+    <!--Modal Product Price Style End -->
+
+    <!--Modal Product Review Style Start -->
+    <dimen name="default_modal_product_review_size">12px</dimen>
+    <!--Modal Product Review Style End -->
+
+    <!--Modal Product CTA Style Start -->
+    <dimen name="default_modal_product_cta_text_size">14px</dimen>
+    <!--Modal Product CTA Style End -->
+
+
+    <!--Item Play Button Style Start-->
+    <dimen name="default_item_play_button_radius">20dp</dimen>
+    <dimen name="default_item_play_button_border">1px</dimen>
+    <!--Item Play Button Style End-->
+
+
+    <!--TODO CAROUSEL START-->
+
+    <!--Video Title Default Dimens Start-->
+    <dimen name="default_carousel_video_title_padding">0dp</dimen>
+    <dimen name="default_carousel_video_title_text_size">18px</dimen>
+    <!--Video Title Default Dimens End-->
+
+    <!--TODO CAROUSEL END-->
+
 </resources>
